@@ -1,12 +1,13 @@
 % https://mjl.clarivate.com/home?PC=MASTER
-% https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html                                % The rules of Frederik
+% https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html                                
+% The rules of Frederik
 % 1. Separate middle names with space (F. A.)
 % 2. Always use strings without {}
 % 3. Journal titles are always lower case unless with {}
 % 4. Publisher for books only
 % 5. Title case for book titles
 % 6. Sort and align ref.bib
-% 7. Never trust Google scholar
+% 7. Never trust Google scholar, always check everything 
 % 8. Check and protect the cases of the beginning of the subtitles
 % 9. Page ranges are double dashes                                                               
 @string{AAS = {Ann.~Appl.~Stat.}}
@@ -32,6 +33,7 @@
 @string{BISS = {B.~Int.~Statist.~Inst.}}
 @string{BMR = {BMR J.~Aust.~Geol.~Geophys.}}
 @string{BSSA = {B.~Seismol.~Soc.~Am.}}
+@string{CRM = {CR M\'ecanique}}
 @string{CG = {Comput.~Geosci.}}
 @string{CPAM = {Comm.~Pure\ Appl.~Math.}}
 @string{CPC = {Comput.~Phys.~Comm.}}
@@ -101,6 +103,7 @@
 @string{JMB = {J.~Math.~Biol.}}
 @string{JMIV = {J.~Math.~Imaging Vis.}}
 @string{JMP = {J.~Math.~Phys.}}
+@string{JOSS = {J~Open Source Softw.}}
 @string{JPA = {J.~Phys.~A:\ Math.~Gen.}}
 @string{JPB = {J.~Phys.~B:\ Mol.~Opt.~Phys}}
 @string{JPO = {J.~Phys.~Oceanog.}}
@@ -1473,6 +1476,31 @@
   volume =	 55,
   number =	 5,
   pages =	 "41--47"
+}
+
+@Article{Askan+2007,
+  title =	 {Full waveform inversion for seismic velocity and
+                  anelastic losses in heterogeneous structures},
+  author =	 {Aysegul Askan and Volkan Akcelik and Jacobo Bielak
+                  and Omar Ghattas},
+  journal =	 BSSA,
+  volume =	 97,
+  number =	 6,
+  pages =	 {1990--2008, doi: 10.1785/0120070079},
+  year =	 2007
+}
+
+@Article{Askan+2010,
+  title =	 {Parameter sensitivity analysis of a nonlinear
+                  least-squares optimization-based anelastic full
+                  waveform inversion method},
+  author =	 {Aysegul Askan and Volkan Akcelik and Jacobo Bielak
+                  and Omar Ghattas},
+  journal =	 CRM,
+  volume =	 338,
+  number =	 {7--8},
+  pages =	 {364--376, doi: 10.1016/j.crme.2010.07.002},
+  year =	 2010
 }
 
 @Book{Aspinall+2008,
@@ -6922,6 +6950,16 @@
   pages =	 {1345--1359},
 }
 
+@Article{Cottaar+2012,
+  author =	 {Sanne Cottaar and Barbara Romanowicz},
+  title =	 {An unsually large {ULVZ} at the base of the mantle
+                  near {H}awaii},
+  year =	 2012,
+  journal =	 EPSL,
+  volume =	 {355--356},
+  pages =	 {213--222, doi: 10.1016/j.epsl.2012.09.005},
+}
+
 @Article{Cottaar+2016,
   title =	 {Morphology of seismically slow lower-mantle
                   structures},
@@ -6931,16 +6969,6 @@
   number =	 2,
   pages =	 {1122--1136, doi: 10.1093/gji/ggw324},
   year =	 2016
-}
-
-@Article{Cottaar+2012,
-  author =	 {Sanne Cottaar and Barbara Romanowicz},
-  title =	 {An unsually large {ULVZ} at the base of the mantle
-                  near {H}awaii},
-  year =	 2012,
-  journal =	 EPSL,
-  volume =	 {355--356},
-  pages =	 {213--222, doi: 10.1016/j.epsl.2012.09.005},
 }
 
 @Article{Counil+91,
@@ -9745,8 +9773,6 @@
   pages =	 {220--223, doi: 10.1006/icar.2002.6942}
 }
 
-
-
 @Article{Falkowski+2008,
   author =	 {Paul G. Falkowski and Yukio Isozaki},
   title =	 {The story of ${O}_2$},
@@ -9755,6 +9781,8 @@
   volume =	 322,
   pages =	 {doi: {10.1126/science.1162641}}
 }
+
+
 
 @Article{Falsaperla+2002,
   author =	 {Susanna Falsaperla and J. Wassermann and
@@ -12875,6 +12903,17 @@
   pages =	 {342--345}
 }
 
+@Article{Gurley+99,
+  author =	 "Kurtis Gurley and Ahsan Kareem",
+  title =	 "Applications of wavelet transforms in earthquake,
+                  wind and ocean engineering",
+  journal =	 "Eng.~Struct.",
+  year =	 1999,
+  volume =	 21,
+  number =	 2,
+  pages =	 "149--167"
+}
+
 @Conference{Hansen2000,
   author =	 "P. C. Hansen",
   title =	 "The {L}-curve and its use in the numerical treatment
@@ -12885,17 +12924,6 @@
   series =	 "Advances in Computational Bioengineering",
   editor =	 "P. Johnston",
   publisher =	 "{WIT} Press",
-}
-
-@Article{Gurley+99,
-  author =	 "Kurtis Gurley and Ahsan Kareem",
-  title =	 "Applications of wavelet transforms in earthquake,
-                  wind and ocean engineering",
-  journal =	 "Eng.~Struct.",
-  year =	 1999,
-  volume =	 21,
-  number =	 2,
-  pages =	 "149--167"
 }
 
 @Article{Gurnis+98,
@@ -13330,8 +13358,6 @@
   month =	 apr,
   volume =	 32,
   pages =	 {7302, doi: {10.1029/2005GL022382}}
-},
-  year =	 2008
 }
 
 @Article{Han+2005b,
@@ -13343,6 +13369,8 @@
   year =	 2005,
   volume =	 163,
   pages =	 {18--25, doi: {10.1111/j.1365-246X.2005.02756.x}}
+},
+  year =	 2008
 }
 
 @Article{Han+2006a,
@@ -15149,6 +15177,18 @@
   year =	 1997,
   volume =	 128,
   pages =	 "125--150"
+}
+
+@Article{Houser+2008,
+  author =	 {Christine Houser and Guy Masters and Peter Shearer
+                  and Gabi Laske},
+  title =	 {Shear and compressional velocity models of the
+                  mantle from cluster analysis of long-period
+                  waveforms},
+  journal =	 GJI,
+  year =	 2008,
+  volume =	 174,
+  pages =	 {195--212, doi: 10.1111/j.1365-246X.2008.03763.x}
 }
 
 @Article{Houser+2009,
@@ -20973,6 +21013,17 @@
   year =	 2013
 }
 
+@Article{Loviknes+2020,
+  author =	 {Karina Loviknes and Zeinab Jeddi and Lars
+                  Ottem{\"o}ller Lars and Thibaut Barreyre},
+  title =	 {When clocks are not working: {OBS} time correction},
+  journal =	 SRL,
+  year =	 2020,
+  volume =	 91,
+  numer =	 4,
+  pages =	 {2247--2258, doi: 10.1785/ 0220190342}
+}
+
 @Article{Lowes+2012,
   title =	 {Orthogonality of harmonic potentials and fields in
                   spheroidal and ellipsoidal coordinates:
@@ -22185,17 +22236,6 @@
   pages =	 {1581--1598. doi: 10.1093/gji/ggv239 }
 }
 
-@Article{Moulik+2016,
-  author =	 {Pritwiraj Moulik and G{\"o}ran Ekstr{\"o}m},
-  title =	 {The relationships between large-scale variations in
-                  shear velocity, density, and compressional velocity
-                  in the {E}arth's mantle},
-  year =	 2016,
-  journal =	 JGR,
-  volume =	 121,
-  pages =	 {2737--2271, doi: 10.1002/2015JB012679},
-}
-
 @Article{Maupin85,
   author =	 "Valerie Maupin",
   title =	 "Partial derivatives of surface wave phase velocities
@@ -22215,19 +22255,6 @@
   year =	 2006,
   volume =	 7,
   pages =	 {Q07008, doi: {10.1029/2006GC001269}}
-}
-
-@Article{Tesoniero+2015,
-  author =	 {Andrea Tesoniero and Ludwig Auer and Lapo Boschi and
-                  Fabio Cammarano},
-  title =	 {Hydration of marginal basins and compositional
-                  variations within the continental lithospheric
-                  mantle inferred from a new global model of shear and
-                  compressional velocity},
-  year =	 2015,
-  journal =	 JGR,
-  volume =	 120,
-  pages =	 {7789--7813, doi: 10.1002/2015JB012026}
 }
 
 @Article{Maus+2006b,
@@ -22595,7 +22622,6 @@
   pages =	 "27523--27552"
 }
 
-
 @Article{McKenzie2003,
   author =	 {Dan McKenzie},
   title =	 {Estimating {$T_{e}$} in the presence of internal
@@ -22606,6 +22632,7 @@
   number =	 {B9},
   pages =	 {2348, doi: 10.1029/2002JB001766}
 }
+
 
 @Article{McKenzie2010,
   author =	 {Dan McKenzie},
@@ -23554,7 +23581,6 @@
   pages =	 {30--33}
 }
 
-
 @Article{Mitra+2006,
   author =	 {Partha P. Mitra and Hiren Maniar},
   title =	 {Concentration maximization and local basis
@@ -23565,6 +23591,7 @@
   number =	 9,
   pages =	 {1775--1782}
 }
+
 
 @Article{Mitrovica+2009,
   author =	 {Jerry X. Mitrovica and Natalya Gomez and Peter
@@ -24241,6 +24268,17 @@
   volume =	 41,
   number =	 5,
   year =	 2014
+}
+
+@Article{Moulik+2016,
+  author =	 {Pritwiraj Moulik and G{\"o}ran Ekstr{\"o}m},
+  title =	 {The relationships between large-scale variations in
+                  shear velocity, density, and compressional velocity
+                  in the {E}arth's mantle},
+  year =	 2016,
+  journal =	 JGR,
+  volume =	 121,
+  pages =	 {2737--2271, doi: 10.1002/2015JB012679},
 }
 
 @Article{Mount+92,
@@ -25510,33 +25548,6 @@
   pages =	 {309--323, doi: 10.1007/s00024-006-0165-4}
 }
 
-@InCollection{Talandier+2001,
-  author =	 {Jacques Talandier and Emile A. Okal},
-  title =	 {Identification criteria for sources of \textit{T}
-                  waves recorded in {F}rench {P}olynesia},
-  journal =	 PAGEOPH,
-  year =	 2001,
-  volume =	 158,
-  pages =	 {567--603, doi: 10.1007/978-3-0348-8270-5_7},
-  booktitle =	 {Monitoring the Comprehensive Nuclear-Test-Ban
-                  Treaty: {H}ydroacoustics},
-  editor =	 {Catherine deGroot-Hedlin and John Orcutt},
-  publisher =	 {Birkh{\"a}user},
-  address =	 {Basel}
-}
-
-@Article{Talandier+1998,
-  author =	{Jacques Talandier and Emile A. Okal},
-  title =	{On the mechanism of conversion of seismic waves to and from
-                  {T} waves in the vicinity of island shores},
-  journal =	BSSA,
-  year =	1998,
-  volume =	88,
-  number =	2,
-  pages =	{621--632}
-}
-
-
 @Article{Okal2008,
   author =	 {Emile A. Okal},
   title =	 {The generation of \textit{{T}} waves by earthquakes},
@@ -25556,6 +25567,7 @@
   volume =	 49,
   pages =	 {357--370}
 }
+
 
 @Article{Oldenburg1974,
   title =	 {The inversion and interpretation of gravity
@@ -26203,6 +26215,16 @@
   volume =	 103,
   number =	 "B10",
   pages =	 "23743--23780"
+}
+
+@Article{Park+2001,
+  author =	{Minkyu Park and Robert I. Odom and Darin J. Soukup},
+  title =	{Modal scattering: {a} key to understanding oceanic {T}-waves},
+  journal =	GRL,
+  year =	2001,
+  volume =	28,
+  number =	17,
+  pages =	{3401--3404, doi: 10.1029/2001GL013472}
 }
 
 @Article{Park+2002,
@@ -27039,7 +27061,6 @@
   pages =	 {1273--1276}
 }
 
-
 @Article{Pierce72a,
   author =	 {David A. Pierce},
   title =	 {Least squares estimation in dynamic-disturbance time
@@ -27050,6 +27071,7 @@
   number =	 1,
   pages =	 {73--78}
 }
+
 
 @Article{Pierce72b,
   author =	 {David A. Pierce},
@@ -30413,7 +30435,7 @@
   year =	 2000,
   volume =	 2,
   pages =	 {61--67, 10.1109/5992.881708}
-},
+}
 
 @Article{Schwartz78,
   author =	 {U. J. Schwarz},
@@ -30423,7 +30445,7 @@
   year =	 1978,
   volume =	 65,
   pages =	 {345--356}
-}
+},
 
 @Article{Schwarzschild2007,
   author =	 {Bertram Schwarzschild},
@@ -30722,7 +30744,7 @@
   year =	 2007,
   volume =	 34,
   pages =	 {L01307, doi: 10.1029/2006GL027980}
-},
+}
 
 @Article{Shaw+95,
   author =	 "R. D. Shaw and Peter Wellman and P. Gunn and
@@ -30732,7 +30754,7 @@
   year =	 1995,
   volume =	 23,
   pages =	 "1--3"
-}
+},
 
 @Article{Shearer+2004,
   title =	 {The global short-period wavefield modelled with a
@@ -30756,18 +30778,6 @@
   volume =	 95,
   number =	 3,
   pages =	 {904­-915, doi: 10.1785/0120040168}
-}
-
-@Article{Houser+2008,
-  author =	 {Christine Houser and Guy Masters and Peter Shearer
-                  and Gabi Laske},
-  title =	 {Shear and compressional velocity models of the
-                  mantle from cluster analysis of long-period
-                  waveforms},
-  journal =	 GJI,
-  year =	 2008,
-  volume =	 174,
-  pages =	 {195--212, doi: 10.1111/j.1365-246X.2008.03763.x}
 }
 
 @Article{Shearer+88,
@@ -31757,7 +31767,7 @@
   pages =	 {03/10/2008},
   year =	 2008
 }
- 
+
 @Article{Simons-2009,
   author =	 {Frederik J. Simons},
   title =	 {Afloat on a sea of noise},
@@ -31774,7 +31784,7 @@
   year =	 2013,
   volume =	 61911637
 }
-
+ 
 @PhdThesis{Simons2002,
   author =	 "Frederik J. Simons",
   title =	 "Structure and Evolution of the {A}ustralian
@@ -32509,8 +32519,6 @@
   pages =	 "2253--2255"
 }
 
-@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
-
 @Article{Snieder+87,
   author =	 {Roel Snieder and Guust Nolet},
   title =	 {Linearized scattering of surface waves on a
@@ -32530,6 +32538,8 @@
   number =	 3,
   pages =	 {1565--1569}
 }
+
+@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
 
 @Article{Snieder+98,
   author =	 {Roel K. Snieder and J. A. Scales},
@@ -34309,6 +34319,32 @@
   address =	 "San Diego, Calif."
 }
 
+@Article{Talandier+1998,
+  author =	{Jacques Talandier and Emile A. Okal},
+  title =	{On the mechanism of conversion of seismic waves to and from
+                  {T} waves in the vicinity of island shores},
+  journal =	BSSA,
+  year =	1998,
+  volume =	88,
+  number =	2,
+  pages =	{621--632}
+}
+
+@InCollection{Talandier+2001,
+  author =	 {Jacques Talandier and Emile A. Okal},
+  title =	 {Identification criteria for sources of \textit{T}
+                  waves recorded in {F}rench {P}olynesia},
+  journal =	 PAGEOPH,
+  year =	 2001,
+  volume =	 158,
+  pages =	 {567--603, doi: 10.1007/978-3-0348-8270-5_7},
+  booktitle =	 {Monitoring the Comprehensive Nuclear-Test-Ban
+                  Treaty: {H}ydroacoustics},
+  editor =	 {Catherine deGroot-Hedlin and John Orcutt},
+  publisher =	 {Birkh{\"a}user},
+  address =	 {Basel}
+}
+
 @Article{Talwani+60,
   author =	 {Manik Talwani and Maurice Ewing},
   title =	 {Rapid computation of gravitational attraction of
@@ -34859,6 +34895,19 @@
   pages =	 {doi: 10.1029/2012GC004162}
 }
 
+@Article{Tesoniero+2015,
+  author =	 {Andrea Tesoniero and Ludwig Auer and Lapo Boschi and
+                  Fabio Cammarano},
+  title =	 {Hydration of marginal basins and compositional
+                  variations within the continental lithospheric
+                  mantle inferred from a new global model of shear and
+                  compressional velocity},
+  year =	 2015,
+  journal =	 JGR,
+  volume =	 120,
+  pages =	 {7789--7813, doi: 10.1002/2015JB012026}
+}
+
 @Article{Tessler+2015,
   author =	 {Z. D. Tessler and C. J. V\"o\"rosmarty and
                   M. Grossberg and I. Gladkova and H. Aizenman and
@@ -35071,16 +35120,6 @@
   volume =	 106,
   number =	 {A8},
   pages =	 {15941--15962}
-}
-
-@Article{Park+2001,
-  author =	{Minkyu Park and Robert I. Odom and Darin J. Soukup},
-  title =	{Modal scattering: {a} key to understanding oceanic {T}-waves},
-  journal =	GRL,
-  year =	2001,
-  volume =	28,
-  number =	17,
-  pages =	{3401--3404, doi: 10.1029/2001GL013472}
 }
 
 @Article{Thomson+2007,
