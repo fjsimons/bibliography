@@ -1,8 +1,19 @@
 % https://mjl.clarivate.com/home?PC=MASTER
-% https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html                                                                                                                                
+% https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html                                
+% The rules of Frederik
+% 1. Separate middle names with space (F. A.)
+% 2. Always use strings without {}
+% 3. Journal titles are always lower case unless with {}
+% 4. Publisher for books only
+% 5. Title case for book titles
+% 6. Sort and align ref.bib
+% 7. Never trust Google scholar, always check everything 
+% 8. Check and protect the cases of the beginning of the subtitles
+% 9. Page ranges are double dashes                                                               
 @string{AAS = {Ann.~Appl.~Stat.}}
 @string{ACHA = {Appl.~Comput.~Harmon.~Anal.}}
 @string{ACM = {ACM T.~Math.~Software}}
+@string{AG = {Adv.~Geophys.}}
 @string{AGG = {Ann.~Geophys.--Germany}} %ANNALES GEOPHYSICAE
 @string{AGI = {Ann.~Geophys.--Italy}} %ANNALS OF GEOPHYSICS
 @string{AGU = {Amer.~Geophys.~Union}}
@@ -13,6 +24,7 @@
 @string{AP = {Academic Press}}
 @string{APJ = {Astroph.~J.}}
 @string{APJL = {Astroph.~J.~Lett.}}
+@string{ARFM = {Annu.~Rev.~Fluid Mech.}}
 @string{AREPS = {Annu.~Rev.~Earth.~Planet.~Sc.}}
 @string{ARGSP = {Annu.~Rev.~Geoph.~Space Phys.}}
 @string{AS = {Ann.~Stat.}}
@@ -23,9 +35,11 @@
 @string{BISS = {B.~Int.~Statist.~Inst.}}
 @string{BMR = {BMR J.~Aust.~Geol.~Geophys.}}
 @string{BSSA = {B.~Seismol.~Soc.~Am.}}
+@string{CRM = {CR M\'ecanique}}
 @string{CG = {Comput.~Geosci.}}
 @string{CPAM = {Comm.~Pure\ Appl.~Math.}}
 @string{CPC = {Comput.~Phys.~Comm.}}
+@string{CMP = {Commun. Math. Phys.}}
 @string{CRG = {C.~R.~Geosci.}}
 @string{CRYO = {The~Cryosphere}}
 @string{CUP = {Cambridge Univ.~Press}}
@@ -88,9 +102,12 @@
 @string{JGR = {J.~Geophys.~Res.}}
 @string{JGS = {J.~Geod.~Sci.}}
 @string{JGTE = {J.~Geotech.~Eng.}}
+@string{JIIP = {J.~Inverse Ill-Pose.~P.}}
 @string{JMA = {J.~Multivariate~Anal.}}
 @string{JMB = {J.~Math.~Biol.}}
+@string{JMIV = {J.~Math.~Imaging Vis.}}
 @string{JMP = {J.~Math.~Phys.}}
+@string{JOSS = {J~Open Source Softw.}}
 @string{JPA = {J.~Phys.~A:\ Math.~Gen.}}
 @string{JPB = {J.~Phys.~B:\ Mol.~Opt.~Phys}}
 @string{JPO = {J.~Phys.~Oceanog.}}
@@ -132,10 +149,13 @@
 @string{RG = {Rev.~Geophys.}}
 @string{RGSP = {Rev.~Geophys.~Space\ Phys.}}
 @string{RMP = {Rev.\ Mod.~Phys.}}
-@string{SEG = {SEG Tech. Prog. Expanded Abstracts}}
+@string{SEG = {SEG Tech.\ Prog.\ Expanded Abstracts}}
 @string{SERRA = {Stoch.~Env.~Res.\ Risk~A.}}
 @string{SFG = {Schriften zur Funk\-tio\-nalanalysis und Geomathematik}}
 @string{SIJSC = {SIAM J.~Sci.~Comput.}}
+@string{SIJIS = {SIAM J.~Imag.~Sci.}}
+@string{SIJNA = {SIAM J.~Numer.~Anal.}}
+@string{SIJAM = {SIAM J.~Appl.~Math.}}
 @string{SIREV = {SIAM Rev.}}
 @string{SP = {Signal Process.}}
 @string{SPIE = {Proc.~SPIE}}
@@ -222,7 +242,7 @@
   title =	 {A review of global ocean temperature observations:
                   {I}mplications for ocean heat content estimates and
                   climate change},
-  author =	 {John P. Abraham and M. Baringer and N. L., Bindoff
+  author =	 {John P. Abraham and M. Baringer and N. L. Bindoff
                   and T. Boyer and L. J. Cheng and J. A. Church and
                   J. L. Conroy and C. M. Domingues and J. T. Fasullo
                   and J. Gilson and G. Goni and S. A. Good and
@@ -326,6 +346,37 @@
   number =	 5415,
   year =	 1999,
   pages =	 {790--793, doi: 10.1126/science.284.5415.790}
+}
+
+@Article{Adam+2005a,
+  title =	 {Extent of the {S}outh {P}acific {S}uperswell},
+  author =	 {Claudia Adam and Alain Bonneville},
+  journal =	 JGR,
+  volume =	 110,
+  number =	 {B9},
+  pages =	 {B09408, doi: 10.1029/2004JB003465},
+  year =	 2005
+}
+
+@Article{Adam+2005b,
+  title =	 {{MiFil}: {A} method to characterize seafloor swells
+                  with application to the south central {P}acific},
+  author =	 {Claudia Adam and Valerie Vidal and Alain Bonneville},
+  journal =	 G3,
+  volume =	 6,
+  number =	 1,
+  year =	 {2005, doi: 10.1029/2004GC000814}
+}
+
+@Article{Adam+2014,
+  author =	 {Claudia Adam and Masaki Yoshida and Daisuke Suetsugu
+                  and Yoshio Fukao and Cecilia Cadio},
+  title =	 {Geodynamic modeling of the {S}outh {P}acific
+                  superswell},
+  year =	 2014,
+  journal =	 PEPI,
+  volume =	 229,
+  pages =	 {24--39, doi: 10.1016/j.pepi.2013.12.014},
 }
 
 @Article{Adam2002,
@@ -729,7 +780,7 @@
                   W. D. Nordhaus and Jonathan T. Overpeck and
                   D. M. Peteet and R. A. Pielke Jr. and Ray
                   T. Pierrehumbert and P. B. Rhines and Thomas
-                  F. Stocker and L D. Talley and J. M. Wallace},
+                  F. Stocker and L D. Talley andn J. M. Wallace},
   title =	 {Abrupt climate change},
   journal =	 {Science},
   year =	 2003,
@@ -1429,6 +1480,31 @@
   volume =	 55,
   number =	 5,
   pages =	 "41--47"
+}
+
+@Article{Askan+2007,
+  title =	 {Full waveform inversion for seismic velocity and
+                  anelastic losses in heterogeneous structures},
+  author =	 {Aysegul Askan and Volkan Akcelik and Jacobo Bielak
+                  and Omar Ghattas},
+  journal =	 BSSA,
+  volume =	 97,
+  number =	 6,
+  pages =	 {1990--2008, doi: 10.1785/0120070079},
+  year =	 2007
+}
+
+@Article{Askan+2010,
+  title =	 {Parameter sensitivity analysis of a nonlinear
+                  least-squares optimization-based anelastic full
+                  waveform inversion method},
+  author =	 {Aysegul Askan and Volkan Akcelik and Jacobo Bielak
+                  and Omar Ghattas},
+  journal =	 CRM,
+  volume =	 338,
+  number =	 {7--8},
+  pages =	 {364--376, doi: 10.1016/j.crme.2010.07.002},
+  year =	 2010
 }
 
 @Book{Aspinall+2008,
@@ -2459,7 +2535,7 @@
   author =	 {Amir Beck and Marc Teboulle},
   title =	 {A {F}ast {I}terative {S}hrinkage-{T}hresholding
                   {A}lgorithm for linear inverse problems},
-  journal =	 {SIAM J.~Imag.~Sci.},
+  journal =	 SIJIS,
   year =	 2009,
   volume =	 2,
   number =	 1,
@@ -3005,7 +3081,7 @@
   author =	 {Greg Beylkin},
   title =	 {On the representation of operators in bases of
                   compactly supported wavelets},
-  journal =	 {SIAM J.~Numer.~Anal.},
+  journal =	 SIJNA,
   year =	 1992,
   volume =	 6,
   number =	 6,
@@ -3545,7 +3621,7 @@
                   Guevara Vasquez},
   title =	 {Edge illumination and imaging of extended
                   reflectors},
-  journal =	 {SIAM J.~Imag.~Sci.},
+  journal =	 SIJIS,
   year =	 2008,
   volume =	 1,
   number =	 1,
@@ -4219,6 +4295,15 @@
   pages =	 "13221-13237"
 }
 
+@Book{Brown+2017,
+  title =	 {On Foundations of Seismology: Bringing Idealizations
+                  Down to Earth},
+  author =	 {James Robert Brown and Michael A. Slawinski},
+  year =	 2017,
+  publisher =	 {World Scientific},
+  address =	 {Singapore}
+}
+
 @Article{Brown+81,
   author =	 {J. M. Brown and T. J. Shankland},
   title =	 {Thermodynamic parameters in the {E}arth as
@@ -4470,7 +4555,7 @@
   journal =	 PTRSL-A,
   year =	 2002,
   volume =	 360,
-  number =	 {2545--2567}
+  number =	 {2545--2567, doi: 10.1098/rsta.2002.1080}
 }
 
 @Article{Bunge+2003,
@@ -4484,7 +4569,7 @@
   year =	 2003,
   volume =	 152,
   number =	 2,
-  pages =	 {280--301}
+  pages =	 {280--301, doi: 10.1046/j.1365-246X.2003.01823.x}
 }
 
 @Article{Bunge2013,
@@ -4505,7 +4590,7 @@
   journal =	 GP,
   volume =	 60,
   number =	 5,
-  pages =	 {1457--1473, doi: {10.1190/1.1443880}},
+  pages =	 {1457--1473, doi: 10.1190/1.1443880},
   year =	 1995
 }
 
@@ -4530,7 +4615,7 @@
   journal =	 SRL,
   volume =	 81,
   number =	 5,
-  pages =	 {689-693, doi: 10.1785/gssrl.81.5.689},
+  pages =	 {689--693, doi: 10.1785/gssrl.81.5.689},
   year =	 2010
 }
 
@@ -4548,6 +4633,18 @@
   number =	 1,
   pages =	 {77--81, doi: 10.1785/0220130098},
   year =	 2014
+}
+
+@Article{Burdick+2017,
+  author =	 {Scott Burdick and Vedran Leki{\'c}},
+  title =	 {Velocity variations and uncertainty from
+                  transdimensional {\textit{P}}-wave tomography of
+                  {N}orth {A}merica},
+  journal =	 GJI,
+  volume =	 209,
+  number =	 2,
+  pages =	 {1337--1351, doi: 10.1093/gji/ggx091},
+  year =	 2017
 }
 
 @PhdThesis{Burg75,
@@ -5512,7 +5609,7 @@
   journal =	 {J.~Geodyn.},
   year =	 2005,
   volume =	 39,
-  pages =	 {223--230}
+  pages =	 {223--230, doi: 10.1016/j.jog.2004.11.001}
 }
 
 @Article{Chapman78,
@@ -5603,7 +5700,7 @@
   year =	 1987,
   volume =	 92,
   number =	 "B1",
-  pages =	 "633--648"
+  pages =	 "633--648, 10.1029/JB092iB01p00633"
 }
 
 @Article{Chen+2001,
@@ -6026,6 +6123,17 @@
   publisher =	 AP,
   address =	 {San Diego, Calif.},
   edition =	 2,
+}
+
+@Article{Christensen+1989,
+  title =	 {Time-dependent convection with non-{N}ewtonian
+                  viscosity},
+  author =	 {Ulrich R. Christensen and David A. Yuen},
+  journal =	 JGR,
+  volume =	 94,
+  number =	 {B1},
+  pages =	 {814--820, doi: 10.1029/JB094iB01p00814},
+  year =	 1989
 }
 
 @Article{Christensen+2001,
@@ -6569,7 +6677,15 @@
   journal =	 {Geol.~Soc.~Am.~Spec.~Paper},
   year =	 2008,
   volume =	 440,
-  pages =	 {281--294, doi: {10.1130/2008.2440(14)}}
+  pages =	 {281--294, doi: 10.1130/2008.2440(14)}
+}
+
+@book{Condie2001,
+  title =	 {Mantle Plumes and Their Record in Earth History},
+  author =	 {Kent C. Condie},
+  year =	 2001,
+  publisher =	 CUP,
+  address =	 {Cambridge, UK}
 }
 
 @Article{Coney+90,
@@ -6644,6 +6760,18 @@
   pages =	 "271--288"
 }
 
+@article{Conrad+2013,
+  title =	 {Stability of active mantle upwelling revealed by net
+                  characteristics of plate tectonics},
+  author =	 {Clinton P. Conrad and Bernhard Steinberger and Trond
+                  H. Torsvik},
+  journal =	 {Nature},
+  volume =	 498,
+  number =	 7455,
+  pages =	 {479--482, doi: 10.1038/nature12203},
+  year =	 2013
+}
+
 @Article{Conrad+95,
   author =	 "Clinton P. Conrad and Bradford H. Hager",
   title =	 "The elastic response of the earth to interannual
@@ -6663,7 +6791,8 @@
   journal =	 GJI,
   year =	 1997,
   volume =	 129,
-  pages =	 "95--112"
+  number =	 1,
+  pages =	 "95--112, doi: j.1365-246X.1997.tb00939.x"
 }
 
 @Article{Conrad+97b,
@@ -6835,6 +6964,16 @@
   volume =	 83,
   number =	 4,
   pages =	 {1345--1359},
+}
+
+@Article{Cottaar+2012,
+  author =	 {Sanne Cottaar and Barbara Romanowicz},
+  title =	 {An unsually large {ULVZ} at the base of the mantle
+                  near {H}awaii},
+  year =	 2012,
+  journal =	 EPSL,
+  volume =	 {355--356},
+  pages =	 {213--222, doi: 10.1016/j.epsl.2012.09.005},
 }
 
 @Article{Cottaar+2016,
@@ -7578,17 +7717,13 @@
 }
 
 @Article{Darragh+85,
-  author = 	 {Robert B. Darragh},
-  title = 	 {Mapping of upper mantle structure from differential ({PP}--{P}) travel-time residuals},
-  journal = 	 {},
-  year = 	 {},
-  OPTkey = 	 {},
-  OPTvolume = 	 {},
-  OPTnumber = 	 {},
-  OPTpages = 	 {},
-  OPTmonth = 	 {},
-  OPTnote = 	 {},
-  OPTannote = 	 {}
+  author =	 {Robert B. Darragh},
+  title =	 {Mapping of upper mantle structure from differential
+                  ({PP}--{P}) travel-time residuals},
+  journal =	 PEPI,
+  year =	 1985,
+  volume =	 41,
+  pages =	 {6--17, doi: 10.1016/0031-9201(85)90098-6 }
 }
 
 @Article{Das+2008a,
@@ -7724,6 +7859,16 @@
   volume =	 61
 }
 
+@Article{Davaille+99,
+  author =	 {Anne Davaille},
+  title =	 {Simultaneous generation of hotspots and superswells
+                  by convection in a heterogeneous planetary mantle},
+  year =	 1999,
+  journal =	 {Nature},
+  volume =	 402,
+  pages =	 {756--760, doi: 10.1038/45461},
+}
+
 @InCollection{Davenport+2012,
   author =	 {Mark A. Davenport and Marco F. Duarte and Yonina
                   C. Eldar and Gitta Kutyniok},
@@ -7782,7 +7927,7 @@
   journal =	 {J.~Geol.},
   year =	 1992,
   volume =	 100,
-  pages =	 {151--206}
+  pages =	 {151--206, doi: 10.1086/629582}
 }
 
 @Article{Davies+92b,
@@ -8161,7 +8306,7 @@
                   L. B. Vries},
   title =	 {Discrete prolate spheroidal wave functions and
                   interpolation},
-  journal =	 {SIAM J.~Appl.~Math.},
+  journal =	 SIJAM,
   year =	 1985,
   volume =	 45,
   number =	 4,
@@ -8425,7 +8570,7 @@
                   processes through circulant embedding of the
                   covariance matrix},
   author =	 {C. R. Dietrich and G. N. Newsam},
-  journal =	 {SIAM J.~Sci.~Comput.},
+  journal =	 SIJSC,
   volume =	 18,
   number =	 4,
   pages =	 {1088--1107},
@@ -8500,7 +8645,7 @@
   title =	 {Recovery of blocky images from noisy and blurred
                   data},
   author =	 {David C. Dobson and F. Santosa},
-  journal =	 {SIAM J.~Appl.~Math.},
+  journal =	 SIJAM,
   volume =	 56,
   number =	 4,
   pages =	 {1181--1198},
@@ -8526,10 +8671,20 @@
   pages =	 {276--278}
 }
 
+@InProceedings{Domenzain+2018,
+  title =	 {Joint inversion of {GPR} and {ER} data},
+  author =	 {Diego Domenzain and John Bradford and Jodi Mead},
+  organization = {Soc.~Explor.~Geophys.},
+  booktitle =	 SEG,
+  pages =	 {4763--4767, doi: 10.1190/segam2018-2997794.1},
+  address =	 {Denver, Col.},
+  year =	 2018
+}
+
 @Article{Donoho+89,
   author =	 {David L. Donoho and Philip B. Stark},
   title =	 {Uncertainty principles and signal recovery},
-  journal =	 {SIAM J.~Appl.~Math.},
+  journal =	 SIJAM,
   volume =	 49,
   number =	 3,
   year =	 1989,
@@ -8847,6 +9002,16 @@
   volume =	 110,
   year =	 2005,
   pages =	 {E12S04, doi: 10.1029/2005JE002404}
+}
+
+@Article{Dushaw2019,
+  title =	 {Ocean acoustic tomography in the {N}orth {A}tlantic},
+  author =	 {Brian D. Dushaw},
+  journal =	 JAOT,
+  volume =	 36,
+  number =	 2,
+  pages =	 {183--202, doi: 10.1175/JTECH-D-18-0082.1},
+  year =	 2019
 }
 
 @Article{Dutton+2015,
@@ -9278,6 +9443,28 @@
   pages =	 {1035--1064, doi: {10.1137/S0895479896298130}}
 }
 
+@Article{Elkins2005,
+  title =	 {Continental magmatism caused by lithospheric
+                  delamination},
+  author =	 {Linda T. Elkins-Tanton},
+  journal =	 {Geol.~Soc.~Am.~Spec.~Paper},
+  volume =	 388,
+  pages =	 {449--461},
+  year =	 2005
+}
+
+@Article{Elkins2007,
+  title =	 {Continental magmatism, volatile recycling, and a
+                  heterogeneous mantle caused by lithospheric
+                  gravitational instabilities},
+  author =	 {Linda T. Elkins-Tanton},
+  journal =	 JGR,
+  volume =	 112,
+  number =	 {B3},
+  pages =	 {B03405, 10.1029/2005JB004072},
+  year =	 2007
+}
+
 @Article{Ellsworth+95,
   title =	 {Seismic evidence for an earthquake nucleation phase},
   author =	 {W. L. Ellsworth and G. C. Beroza},
@@ -9621,6 +9808,8 @@
   pages =	 {doi: {10.1126/science.1162641}}
 }
 
+
+
 @Article{Falsaperla+2002,
   author =	 {Susanna Falsaperla and J. Wassermann and
                   F. Scherbaum},
@@ -9678,8 +9867,6 @@
   year =	 2014,
   journal =	 GJI
 }
-
-
 
 @Article{Fang+2016,
   author =	 {Hongjian Fang and Haijiang Zhang and Huajian Yao and
@@ -10058,7 +10245,7 @@
   journal =	 GJI,
   volume =	 185,
   number =	 2,
-  pages =	 {775--798, doi: {10.1111/j.1365-246X.2011.04966.x}},
+  pages =	 {775--798, doi: 10.1111/j.1365-246X.2011.04966.x},
   year =	 2011
 }
 
@@ -10178,6 +10365,17 @@
   pages =	 "745--748"
 }
 
+@Article{Fischer+2012,
+  author =	 {Doreen Fischer and Volker Michel},
+  title =	 {Sparse regularization of inverse gravimetry---case
+                  study: spatial and temporal mass variations in
+                  {S}outh {A}merica},
+  journal =	 IP,
+  year =	 2012,
+  volume =	 28,
+  pages =	 {065012, doi: 10.1088/0266-5611/28/6/065012}
+}
+
 @Article{Fischer+98,
   author =	 "Karen M. Fischer and Matthew J. Fouch and Douglas
                   A. Wiens and Margaret S. Boettcher",
@@ -10209,17 +10407,6 @@
   volume =	 417,
   number =	 6892,
   pages =	 "933--936"
-}
-
-@Article{Fisher+2011,
-  author =	 {Doreen Fischer and Volker Michel},
-  title =	 {Sparse regularization of inverse gravimetry---case
-                  study: spatial and temporal mass variations in
-                  {S}outh {A}merica},
-  journal =	 IP,
-  year =	 2012,
-  volume =	 28,
-  pages =	 {065012, doi: {10.1088/0266-5611/28/6/065012}}
 }
 
 @Book{Fisher+87,
@@ -10411,11 +10598,22 @@
   pages =	 "1940--1944"
 }
 
+@article{Forte+2001,
+  title =	 {Deep-mantle high-viscosity flow and thermochemical
+                  structure inferred from seismic and geodynamic data},
+  author =	 {Alessandro M. Forte and Jerry X. Mitrovica},
+  journal =	 {Nature},
+  volume =	 410,
+  number =	 6832,
+  pages =	 {1049--1056, doi: 10.1038/35074000},
+  year =	 2001
+}
+
 @Article{Forte+95a,
   author =	 "Alessandro M. Forte and Adam M. Dziewo{\'n}ski and
                   Richard J. O'Connell",
-  title =	 "Continent-Ocean Chemical Heterogeneity In The Mantle
-                  Based On Seismic Tomography",
+  title =	 "Continent-ocean chemical heterogeneity in the mantle
+                  based on seismic tomography",
   journal =	 "Science",
   year =	 1995,
   volume =	 268,
@@ -10561,7 +10759,7 @@
 }
 
 @Article{Franklin70,
-  author =	 {Franklin JN},
+  author =	 {J. N. Franklin},
   title =	 {Well-posed stochastic extensions of ill-posed linear
                   problems},
   journal =	 {J.~Math.~Anal.~App.},
@@ -11138,6 +11336,17 @@
   year =	 2013
 }
 
+@Article{Garnero+2016,
+  author =	 {Edward J. Garnero and Allen K. McNamara and
+                  Sang-Heon Shim},
+  title =	 {Continent-sized anomalous zones with low seismic
+                  velocity at the base of {E}arth's mantle},
+  year =	 2016,
+  journal =	 NGEO,
+  volume =	 9,
+  pages =	 {481--489, doi: 10.1038/NGEO2733}
+}
+
 @Book{Gauch2003,
   title =	 {Scientific method in practice},
   author =	 {H. G. Gauch},
@@ -11212,6 +11421,15 @@
   volume =	 90,
   number =	 3,
   pages =	 {764--774, doi: 10.1785/0119990103}
+}
+
+@article{Geng+2020,
+  title =	 {Subspace method for multi-parameter {FWI}},
+  author =	 {Yu Geng and Kris Innanen and Wenyong Pan},
+  journal =	 CMP,
+  volume =	 28,
+  pages =	 {228--248, doi: 10.4208/cicp.OA-2018-0087},
+  year =	 2020
 }
 
 @article{Genova+2016,
@@ -11323,6 +11541,14 @@
   pages =	 "165--173"
 }
 
+@book{Gerya2019,
+  title =	 {Introduction to Numerical Geodynamic Modelling},
+  author =	 {Taras Gerya},
+  year =	 2019,
+  publisher =	 CUP,
+  address =	 {Cambridge, UK}
+}
+
 @Article{Gesch+99,
   author =	 "D.B. Gesch and K. L. Verdin and Susan K. Greenlee",
   title =	 "New land surface digital elevation model covers the
@@ -11333,6 +11559,17 @@
   number =	 6,
   pages =	 "69--70",
   month =	 "February"
+}
+
+@Article{Ghelichkhan+2016,
+  title =	 {The compressible adjoint equations in geodynamics:
+                  {d}erivation and numerical assessment},
+  author =	 {Siavash Ghelichkhan and Hans-Peter Bunge},
+  journal =	 GEM,
+  volume =	 7,
+  number =	 1,
+  pages =	 {1--30, doi: 10.1007/s13137-016-0080-5},
+  year =	 2016
 }
 
 @Article{Ghil+2001,
@@ -11471,12 +11708,22 @@
 @Article{Glatzmaier+99,
   author =	 "Gary A. Glatzmaier and Robert S. Coe and Lionel
                   Hongre and Paul H. Roberts",
-  title =	 "The Role Of The {E}arth's Mantle In Controlling The
-                  Frequency Of Geomagnetic Reversals",
+  title =	 "The role of the {E}arth's mantle in controlling the
+                  frequency of geomagnetic reversals",
   journal =	 "Nature",
   year =	 1999,
   volume =	 401,
   pages =	 "885--890"
+}
+
+@book{Glatzmaier2014,
+  author =	 {Gary A. Glatzmaier},
+  title =	 {Introduction to Modeling Convection in Planets and
+                  Stars: Magnetic Field, Density Stratification,
+                  Rotation},
+  publisher =	 PUP,
+  year =	 2014,
+  address =	 {Princeton, NJ}
 }
 
 @Article{Gledhill85,
@@ -11748,7 +11995,7 @@
   title =	 {An Analysis of the Total Least Squares Problem},
   publisher =	 {SIAM},
   year =	 1980,
-  journal =	 {SIAM J.~Numer.~Anal.},
+  journal =	 SIJNA,
   volume =	 17,
   number =	 6,
   pages =	 {883--893, doi: {10.1137/0717073}}
@@ -12023,6 +12270,17 @@
   volume =	 13,
   number =	 2,
   pages =	 {323--349}
+}
+
+@Article{Gouveia+98,
+  title =	 {Bayesian seismic waveform inversion: {P}arameter
+                  estimation and uncertainty analysis},
+  author =	 {Wences P. Gouveia and John A. Scales},
+  journal =	 JGR,
+  volume =	 103,
+  number =	 {B2},
+  pages =	 {2759--2779, doi: 10.1029/97JB02933},
+  year =	 1998
 }
 
 @Book{Gradshteyn+2000,
@@ -12357,7 +12615,7 @@
   title =	 {Differential operators commuting with finite
                   convolution integral operators: some non-{A}belian
                   examples},
-  journal =	 {SIAM J.~Appl.~Math.},
+  journal =	 SIJAM,
   year =	 1982,
   volume =	 42,
   number =	 5,
@@ -12691,6 +12949,18 @@
   pages =	 {342--345}
 }
 
+@Conference{Hansen2000,
+  author =	 "P. C. Hansen",
+  title =	 "The {L}-curve and its use in the numerical treatment
+                  of inverse problems",
+  year =	 "2000",
+  booktitle =	 "Computational Inverse Problems in Electrocardiology",
+  volume =	 "4",
+  series =	 "Advances in Computational Bioengineering",
+  editor =	 "P. Johnston",
+  publisher =	 "{WIT} Press",
+}
+
 @Article{Gurley+99,
   author =	 "Kurtis Gurley and Ahsan Kareem",
   title =	 "Applications of wavelet transforms in earthquake,
@@ -12762,18 +13032,6 @@
   number =	 2,
   pages =	 {427--440, doi: 10.1111/j.1365-246X.1994.tb03942.x},
   year =	 1994
-}
-
-@Conference{Hansen2000,
-  author =	 "P. C. Hansen",
-  title =	 "The {L}-curve and its use in the numerical treatment
-                  of inverse problems",
-  year =	 "2000",
-  booktitle =	 "Computational Inverse Problems in Electrocardiology",
-  volume =	 "4",
-  series =	 "Advances in Computational Bioengineering",
-  editor =	 "P. Johnston",
-  publisher =	 "{WIT} Press",
 }
 
 @Article{Guseinov+95,
@@ -13146,6 +13404,8 @@
   month =	 apr,
   volume =	 32,
   pages =	 {7302, doi: {10.1029/2005GL022382}}
+},
+  year =	 2008
 }
 
 @Article{Han+2005b,
@@ -13230,8 +13490,6 @@
   year =	 2008,
   volume =	 113,
   pages =	 {B11413, doi: {10.1029/2008JB005705}}
-},
-  year =	 2008
 }
 
 @Article{Han+2009,
@@ -14888,6 +15146,20 @@
   organization = "IEEE"
 }
 
+@Article{Horbach+2014,
+  title =	 {The adjoint method in geodynamics: derivation from a
+                  general operator formulation and application to the
+                  initial condition problem in a high resolution
+                  mantle circulation model},
+  author =	 {Andr{\'e} Horbach and Hans-Peter Bunge and Jens
+                  Oeser},
+  journal =	 GEM,
+  volume =	 5,
+  number =	 2,
+  pages =	 {163--194, doi: 10.1007/s13137-014-0061-5},
+  year =	 2014
+}
+
 @Book{Horn+90,
   author =	 {Roger A. Horn and Charles R. Johnson},
   title =	 {Matrix Analysis},
@@ -14951,6 +15223,18 @@
   year =	 1997,
   volume =	 128,
   pages =	 "125--150"
+}
+
+@Article{Houser+2008,
+  author =	 {Christine Houser and Guy Masters and Peter Shearer
+                  and Gabi Laske},
+  title =	 {Shear and compressional velocity models of the
+                  mantle from cluster analysis of long-period
+                  waveforms},
+  journal =	 GJI,
+  year =	 2008,
+  volume =	 174,
+  pages =	 {195--212, doi: 10.1111/j.1365-246X.2008.03763.x}
 }
 
 @Article{Houser+2009,
@@ -15896,7 +16180,7 @@
   volume =	 433,
   pages =	 {159--168, doi: 10.1016/j.epsl.2015.10.053},
   year =	 2016
-}
+},
 
 @Book{Jensen+2001,
   author =	 {A. Jensen and A. la Cour-Harbo},
@@ -15973,7 +16257,7 @@
   volume =	 343,
   number =	 6174,
   pages =	 {999--1001, doi: 10.1126/science.1247385}
-},
+}
 
 @Book{Johnson+73,
   author =	 {Norman L. Johnson and Samuel Kotz},
@@ -16582,13 +16866,13 @@
 
 @article{Kanamori2005,
   author =	 {{Kanamori}, H.},
-  title =	 {Real-Time Seismology and Earthquake Damage
-                  Mitigation},
+  title =	 {Real-Time seismology and earthquake damage
+                  mitigation},
   journal =	 AREPS,
   year =	 2005,
   volume =	 33,
   pages =	 {195--214, doi:
-                  {10.1146/annurev.earth.33.092203.122626}},
+                  10.1146/annurev.earth.33.092203.122626},
 }
 
 @Article{Kanamori75,
@@ -17651,7 +17935,7 @@
   journal =	 GJI,
   year =	 2006,
   volume =	 166,
-  pages =	 {1--11, doi: {10.1111/j.1365-246X.2006.03017.x}}
+  pages =	 {1--11, doi: 10.1111/j.1365-246X.2006.03017.x}
 }
 
 @Article{King+2012,
@@ -18596,7 +18880,7 @@
   volume =	 113,
   number =	 {B6},
   year =	 2008,
-  pages =	 {6306, doi: 10.1029/2007JB005169},
+  pages =	 {B06306, doi: 10.1029/2007JB005169},
 }
 
 @Incollection{Kutyniok+2012a,
@@ -19531,7 +19815,7 @@
 @Article{Lekic+2011,
   title =	 {Inferring upper-mantle structure by full waveform
                   tomography with the spectral element method},
-  author =	 {V. Leki{\'c} and B. Romanowicz},
+  author =	 {Ved Leki{\'c} and B. Romanowicz},
   journal =	 GJI,
   volume =	 185,
   number =	 2,
@@ -19901,7 +20185,7 @@
   author =	 {A. V. Levy and A. Montalvo},
   title =	 {The tunneling algorithm for the global minimization
                   of functions},
-  journal =	 {{SIAM} J.~Sci.~Stat.~Comput},
+  journal =	 {SIAM J.~Sci.~Stat.~Comput},
   year =	 1985,
   volume =	 6,
   pages =	 {15--29},
@@ -20775,6 +21059,17 @@
   year =	 2013
 }
 
+@Article{Loviknes+2020,
+  author =	 {Karina L{\o}viknes and Zeinab Jeddi and Lars
+                  Ottem{\"o}ller Lars and Thibaut Barreyre},
+  title =	 {When clocks are not working: {OBS} time correction},
+  journal =	 SRL,
+  year =	 2020,
+  volume =	 91,
+  numer =	 4,
+  pages =	 {2247--2258, doi: 10.1785/ 0220190342}
+}
+
 @Article{Lowes+2012,
   title =	 {Orthogonality of harmonic potentials and fields in
                   spheroidal and ellipsoidal coordinates:
@@ -21096,7 +21391,7 @@
   author =	 {J. Ma and V. Rokhlin and S. Wandzura},
   title =	 {Generalized {G}aussian quadrature rules for systems
                   of arbitrary functions},
-  journal =	 {SIAM J.~Numer.~Anal.},
+  journal =	 SIJNA,
   year =	 1996,
   volume =	 33,
   number =	 3,
@@ -21705,6 +22000,28 @@
   year =	 2012
 }
 
+@Article{Martin+88,
+  title =	 {Crystal settling in a vigorously convecting magma
+                  chamber},
+  author =	 {Daniel Martin and Roger Nokes},
+  journal =	 {Nature},
+  volume =	 332,
+  number =	 6164,
+  pages =	 {534--536, doi: 10.1038/332534a0},
+  year =	 1988
+}
+
+@Article{Martin+89,
+  title =	 {A fluid-dynamical study of crystal settling in
+                  convecting magmas},
+  author =	 {Daniel Martin and Roger Nokes},
+  journal =	 {J.~Petrol.},
+  volume =	 30,
+  number =	 6,
+  pages =	 {1471--1500, doi: 10.1093/petrology/30.6.1471},
+  year =	 1989
+}
+
 @Article{Martin2006,
   title =	 {Marmousi2:~{A}n elastic upgrade for {M}armousi},
   author =	 {Gary S. Martin and Robert Wiley and Kurt J. Marfurt},
@@ -21808,7 +22125,7 @@
   author =	 {T. Guy Masters},
   title =	 {Low-Frequency Seismology and the Three-Dimensional
                   Structure of the Earth},
-  journal =	 {PTRSL-A},
+  journal =	 PTRSL-A,
   year =	 1989,
   volume =	 328,
   number =	 1599,
@@ -22351,6 +22668,7 @@
   pages =	 "27523--27552"
 }
 
+
 @Article{McKenzie2003,
   author =	 {Dan McKenzie},
   title =	 {Estimating {$T_{e}$} in the presence of internal
@@ -22410,7 +22728,6 @@
   volume =	 112,
   pages =	 "55--88"
 }
-
 
 @Article{McLeod86,
   author =	 {Malcolm G. McLeod},
@@ -22560,6 +22877,16 @@
   pages =	 "645--662"
 }
 
+@Article{Mead+2020,
+  author =	 {Jodi L. Mead and James F. Ford},
+  title =	 {Joint inversion of compact operators},
+  journal =	 JIIP,
+  year =	 2020,
+  volume =	 28,
+  number =	 1,
+  pages =	 {105--118, doi: 10.1515/jiip-2019-0068}
+}
+
 @Article{Meade+91,
   author =	 {Charles Meade and Raymond Jeanloz},
   title =	 {Deep-focus earthquakes and recycling of water into
@@ -22679,6 +23006,16 @@
   volume =	 44,
   number =	 3,
   pages =	 {745--751, doi: 10.1016/0019-1035(80)90141-4}
+}
+
+@Article{Melosh80,
+  title =	 {The dynamical origin of subduction zone topography},
+  author =	 {H. J. Melosh and Arthur Raefsky},
+  journal =	 GJI,
+  volume =	 60,
+  number =	 3,
+  pages =	 {333--354, doi: 10.1111/j.1365-246X.1980.tb04812.x},
+  year =	 1980
 }
 
 @Article{Melton81a,
@@ -22947,6 +23284,17 @@
   pages =	 {045019, doi: 10.1088/0266-5611/24/4/045019}
 }
 
+@Article{Michel+2015,
+  author =	 {Volker Michel and Sarah Orzlowski},
+  title =	 {On the nullspace of a class of {F}redholm integral
+                  equations of the first kind},
+  journal =	 {J.~Inv. Ill-posed Probl.},
+  year =	 2015,
+  volume =	 24,
+  number =	 6,
+  pages =	 {1--24, doi: 10.1515/jiip-2015-0026}
+}
+
 @Article{Michel+2017,
   author =	 {Volker Michel and Frederik J. Simons},
   title =	 {A general approach to regularizing inverse problems
@@ -22994,7 +23342,7 @@
 @Article{Michel2011,
   title =	 {Optimally localized approximate identities on the
                   2-sphere},
-  author =	 {V. Michel},
+  author =	 {Volker Michel},
   journal =	 {Numer.~Func.~Anal.~Optim.},
   volume =	 32,
   number =	 8,
@@ -23010,7 +23358,7 @@
   address =	 {New York}
 }
 
-@InCollection{Michel2015,
+@incollection{Michel2015,
   author =	 {Volker Michel},
   title =	 {Tomography: {P}roblems and Multiscale Solutions},
   booktitle =	 {Handbook of {G}eomathematics},
@@ -23280,6 +23628,7 @@
   pages =	 "655--663"
 }
 
+
 @Article{Mitra+2005,
   author =	 {Partha P. Mitra and H. Maniar},
   title =	 {Local basis expansions for {MEG} source
@@ -23370,7 +23719,6 @@
   year =	 2010,
   pages =	 "2756--2767, doi: 10.1016/j.rse.2010.06.008",
 }
-
 
 @Article{Molnar+2010,
   title =	 {Major intracontinental strike-slip faults and
@@ -23782,13 +24130,13 @@
 }
 
 @Article{Morgan1971,
-  author =	 {W. Jason Morgan},
   title =	 {Convection plumes in the lower mantle},
+  author =	 {William Jason Morgan},
   journal =	 {Nature},
-  year =	 1971,
   volume =	 230,
   number =	 5288,
-  pages =	 {42--43, doi: 10.1038/230042a0}
+  pages =	 {42--43, doi: 10.1038/230042a0},
+  year =	 1971
 }
 
 @Article{Morgan65,
@@ -23800,7 +24148,7 @@
   year =	 1965,
   volume =	 70,
   number =	 24,
-  pages =	 {6175--6185}
+  pages =	 {6175--6185, doi: 10.1029/JZ070i024p06175}
 }
 
 @Article{Morita+84,
@@ -23968,6 +24316,17 @@
   volume =	 41,
   number =	 5,
   year =	 2014
+}
+
+@Article{Moulik+2016,
+  author =	 {Pritwiraj Moulik and G{\"o}ran Ekstr{\"o}m},
+  title =	 {The relationships between large-scale variations in
+                  shear velocity, density, and compressional velocity
+                  in the {E}arth's mantle},
+  year =	 2016,
+  journal =	 JGR,
+  volume =	 121,
+  pages =	 {2737--2271, doi: 10.1002/2015JB012679},
 }
 
 @Article{Mount+92,
@@ -24567,6 +24926,7 @@
   address =	 "New York"
 }
 
+
 @article{Nimmo+2001,
   author =	 {Francis Nimmo and Martha S. Gilmore},
   title =	 {Constraints on the depth of magnetized crust on
@@ -24674,7 +25034,6 @@
   number =	 4,
   pages =	 {13--21}
 }
-
 
 @Article{Nissen-Meyer+2007a,
   author =	 {Tarje Nissen-Meyer and F. A. Dahlen and Alex
@@ -25096,6 +25455,17 @@
   pages =	 {5--8}
 }
 
+@Article{ODowd90,
+  title =	 {Ill-conditioning and pre-whitening in seismic
+                  deconvolution},
+  author =	 {R. J. O'Dowd},
+  journal =	 GJI,
+  volume =	 101,
+  number =	 2,
+  pages =	 {489--491, doi: 10.1111/j.1365-246X.1990.tb06582.x},
+  year =	 1990
+}
+
 @Article{OHanlon2001,
   author =	 {Larry O'Hanlon},
   title =	 {Seismic sleuths},
@@ -25225,6 +25595,7 @@
   volume =	 164,
   pages =	 {309--323, doi: 10.1007/s00024-006-0165-4}
 }
+
 
 @Article{Okal2008,
   author =	 {Emile A. Okal},
@@ -25723,6 +26094,18 @@
   pages =	 {569--572, doi: 10.1029/GL015i006p00569}
 }
 
+@Article{Pan+2020,
+  title =	 {On the influence of different misfit functions for
+                  attenuation estimation in viscoelastic full-waveform
+                  inversion: synthetic study},
+  author =	 {Wenyong Pan and Yanfei Wang},
+  journal =	 GJI,
+  volume =	 221,
+  number =	 2,
+  pages =	 {1292--1319, doi: 10.1093/gji/ggaa089},
+  year =	 2020
+}
+
 @Article{Panet+2006,
   author =	 {Isabelle Panet and A. Chambodut and Michel Diament
                   and M. Holschneider and O. Jamet},
@@ -25894,6 +26277,16 @@
   pages =	 "23743--23780"
 }
 
+@Article{Park+2001,
+  author =	{Minkyu Park and Robert I. Odom and Darin J. Soukup},
+  title =	{Modal scattering: {a} key to understanding oceanic {T}-waves},
+  journal =	GRL,
+  year =	2001,
+  volume =	28,
+  number =	17,
+  pages =	{3401--3404, doi: 10.1029/2001GL013472}
+}
+
 @Article{Park+2002,
   author =	 "Jeffrey Park and Vadim Levin",
   title =	 "Seismic anisotropy: {T}racing plate dynamics in the
@@ -25960,13 +26353,14 @@
   year =	 1980
 }
 
-@Article{Parker72,
+@Article{Parker73,
   author =	 "Robert L. Parker",
   title =	 "The rapid calculation of potential anomalies",
   journal =	 GJRAS,
-  year =	 1972,
+  year =	 1973,
   volume =	 31,
-  pages =	 "447--455"
+  number =	 4,
+  pages =	 "447--455, doi: 10.1111/j.1365-246X.1973.tb06513.x"
 }
 
 @Article{Parker75,
@@ -26034,6 +26428,19 @@
   year =	 2007,
   volume =	 446,
   pages =	 {900--903, doi: {10.1038/nature05691}}
+}
+
+@Article{Parmentier+1976,
+  title =	 {Studies of finite amplitude non-{N}ewtonian thermal
+                  convection with application to convection in the
+                  {E}arth's mantle},
+  author =	 {Edgar Mark Parmentier and Donald L. Turcotte and
+                  K. E. Torrance},
+  journal =	 JGR,
+  volume =	 81,
+  number =	 11,
+  pages =	 {1839--1846, doi: 10.1029/JB081i011p01839},
+  year =	 1976
 }
 
 @Article{Parolai+2002,
@@ -26321,6 +26728,16 @@
   year =	 1976,
   volume =	 46,
   number =	 {669--705}
+}
+
+@Article{Peltier85,
+  title =	 {Mantle convection and viscoelasticity},
+  author =	 {W. R. Peltier},
+  journal =	 ARFM,
+  volume =	 17,
+  number =	 1,
+  pages =	 {561--608, doi: 10.1146/annurev.fl.17.010185.003021},
+  year =	 1985
 }
 
 @incollection{Percival+2000,
@@ -26682,6 +27099,7 @@
   year =	 2007
 }
 
+
 @Article{Pica+90,
   title =	 {Nonlinear inversion of seismic reflection data in a
                   laterally invariant medium},
@@ -26825,7 +27243,6 @@
   pages =	 {doi: 10.1109/SSP.2012.6319659}
 }
 
-
 @Inproceedings{Plattner+2013,
   author =	 {Alain Plattner and Frederik J. Simons},
   title =	 {A spatiospectral localization approach for analyzing
@@ -26925,6 +27342,17 @@
   year =	 2017,
   month =	 {Mar},
   pages =	 1627
+}
+
+@Article{Plattner2020,
+  title =	 {{GPRPy}: Open-source ground-penetrating radar
+                  processing and visualization software},
+  author =	 {Alain M. Plattner},
+  journal =	 TLE,
+  volume =	 39,
+  number =	 5,
+  pages =	 {332--337, doi: 10.1190/tle39050332.1},
+  year =	 2020
 }
 
 @Article{Plessix2006,
@@ -27561,7 +27989,7 @@
   author =	 {J. Rasch and A. C. H. Yu},
   title =	 {Efficient storage scheme for precalculated {W}igner
                   $3J$, $6J$, and {G}aunt coefficients},
-  journal =	 {SIAM J.~Sci.~Comput.},
+  journal =	 SIJSC,
   year =	 2003,
   volume =	 25,
   number =	 4,
@@ -27626,7 +28054,7 @@
 
 @Article{Rawlinson+2010,
   title =	 {Seismic tomography: {A} window into deep {E}arth},
-  author =	 {Nick Rawlinson and S.Pozgay and S. Fishwick},
+  author =	 {Nick Rawlinson and S. Pozgay and S. Fishwick},
   journal =	 PEPI,
   volume =	 178,
   pages =	 {101--135, doi: 10.1016/j.pepi.2009.10.002},
@@ -28524,7 +28952,7 @@
 @Article{Rokhlin+2006,
   title =	 {Fast algorithms for spherical harmonic expansions},
   author =	 {V. Rokhlin and M. Tygert},
-  journal =	 {SIAM J.~Sci.~Comp.},
+  journal =	 SIJSC,
   volume =	 27,
   pages =	 {1903--1928},
   year =	 2006
@@ -29686,6 +30114,17 @@
   pages =	 {421--422, doi: 10.1029/2011EO470001}
 }
 
+@Article{Scherzer+2000,
+  title =	 {Relations between regularization and diffusion
+                  filtering},
+  author =	 {Otmar Scherzer and Joachim Weickert},
+  journal =	 JMIV,
+  volume =	 12,
+  number =	 1,
+  pages =	 {43--63, doi: 10.1023/A:1008344608808},
+  year =	 2000
+}
+
 @Book{Schey2005,
   author =	 {H. M. Schey},
   title =	 {Div, grad, curl, and all that},
@@ -29958,17 +30397,6 @@
   year =	 2001,
   address =	 {Cambridge, UK}
 }
-
-@Book{Schubert+2001,
-  author =	 "Gerald Schubert and Donald L. Turcotte and Peter
-                  Olson",
-  title =	 "Mantle Convection in the Earth and Planets",
-  publisher =	 CUP,
-  year =	 2001,
-  edition =	 2,
-  address =	 "New York"
-}
-
 @Article{Schuberth+2009,
   title =	 {Tomographic filtering of high-resolution mantle
                   circulation models: {C}an seismic heterogeneity be
@@ -30036,7 +30464,7 @@
   pages =	 {1100--1119, 10.1093/gji/ggv505},
   year =	 2016,
   journal =	 GJI
-}
+},
 
 @Article{Schuster1898,
   author =	 {A. Schuster},
@@ -30047,6 +30475,14 @@
   year =	 1898,
   volume =	 3,
   pages =	 {13--41}
+}
+
+@Book{Schuster2017,
+  title =	 {Seismic Inversion},
+  author =	 {Gerard T. Schuster},
+  year =	 2017,
+  publisher =	 {SEG},
+  address =	 {Tulsa, OK},
 }
 
 @Article{Schutt+2001,
@@ -30186,7 +30622,7 @@
   year =	 1980,
   volume =	 48,
   pages =	 {84--93}
-},
+}
 
 @Article{Seidl+84,
   author =	 {D. Seidl and W. Stammler},
@@ -30341,7 +30777,7 @@
   volume =	 54,
   number =	 6,
   pages =	 {908--916, doi: 10.1016/j.asr.2014.05.005}
-}
+},
 
 @Book{Sharp+93,
   author =	 {Robert P. Sharp and Allen F. Glazner},
@@ -30501,7 +30937,7 @@
   volume =	 315,
   number =	 5818,
   pages =	 {1529--1532, doi: 10.1126/science.1136776}
-},
+}
 
 @Article{Shepherd+2012,
   author =	 {Andrew Shepherd and Erik R. Ivins and Geruo A and
@@ -30562,6 +30998,14 @@
   number =	 6,
   pages =	 {857--876, doi: {10.1080/09500340512331309084}},
   year =	 2005
+}
+
+@Book{Sheriff+95,
+  author =	 {R. E. Sheriff and L. P. Geldart},
+  title =	 {Exploration Seismology},
+  publisher =	 CUP,
+  year =	 1995,
+  address =	 {Cambridge, UK}
 }
 
 @Article{Shibutani+96,
@@ -30893,6 +31337,17 @@
   year =	 2000
 }
 
+@Article{Simmons+2010,
+  author =	 {Nathan A. Simmons and Alessandro M. Forte and Lapo
+                  Boschi and Stephen P. Grand},
+  title =	 {{GyPSuM}: {A} joint tomographic model of mantle
+                  density and seismic wave speeds},
+  journal =	 JGR,
+  year =	 2010,
+  volume =	 115,
+  pages =	 {B12310, doi:10.1029/2010JB007631},
+}
+
 @Article{Simmons+2012,
   author =	 {Nathan A. Simmons and Steve C. Myers and Gardar Johannesson
                   and Eric Matzel},
@@ -30942,7 +31397,19 @@
                   autonomous oceanic floats},
   year =	 2020,
   journal =	 BSSA,
-  pages =	 {1--28, 10.1785/0120190173}
+  volume =	 100,
+  number =	 3,
+  pages =	 {970--997, doi: 10.1785/0120190173}
+}
+
+@Article{Simon+2021,
+  author =	 {Joel D. Simon and Frederik J. Simons and Jessica C. E. Irving},
+  title =	 {Recording earthquakes for tomographic imaging of the
+                  mantle beneath the {S}outh {P}acific by autonomous
+                  {MERMAID} floats},
+  year =	 2020,
+  journal =	 GJI,
+  pages =	 {submitted for publication}
 }
 
 @Article{Simons+2000,
@@ -31351,7 +31818,7 @@
   number =	 6659,
   pages =	 "500--504, doi: 10.1038/37339"
 }
-
+ 
 @Article{Simons+99,
   author =	 "Frederik J. Simons and Alet Zielhuis and Rob D. van
                   der Hilst",
@@ -31512,7 +31979,7 @@
   series =	 {doi: 10.17226/13362},
   address =	 {Washington, DC}
 }
- 
+
 @Book{Singh+2001,
   title =	 {Snow and Glacier Hydrology},
   author =	 {Pratab Singh and Vijay P. Singh},
@@ -31651,6 +32118,16 @@
   pages =	 {2302, doi: {10.1029/2001JB000169}}
 }
 
+@Article{Sleep75,
+  title =	 {Stress and flow beneath island arcs},
+  author =	 {Norman H. Sleep},
+  journal =	 GJI,
+  volume =	 42,
+  number =	 3,
+  pages =	 {827--857, doi: 10.1111/j.1365-246X.1975.tb06454.x},
+  year =	 1975
+}
+
 @Article{Sleep90,
   author =	 {Norman H. Sleep},
   title =	 {Hotspots and mantle plumes: {S}ome phenomenology},
@@ -31710,7 +32187,7 @@
   author =	 {David Slepian},
   title =	 {A numerical method for determining the eigenvalues
                   and eigenfunctions of analytic kernels},
-  journal =	 {SIAM J.~Numer.~Anal.},
+  journal =	 SIJNA,
   year =	 1968,
   volume =	 5,
   number =	 3,
@@ -32085,6 +32562,8 @@
   pages =	 {224--242}
 }
 
+@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
+
 @InCollection{Sneeuw+97,
   author =	 {Nico Sneeuw and M. van Gelderen},
   title =	 {The polar gap},
@@ -32266,8 +32745,6 @@
   number =	 32,
   pages =	 {277--278}
 }
-
-@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
 
 @Article{Sohn+2001,
   author =	 {Robert A. Sohn and John A. Hildebrand},
@@ -32945,18 +33422,7 @@
   year =	 2002,
   volume =	 29,
   number =	 21,
-  pages =	 {2019, doi: {10.1029/2002GL015476}}
-}
-
-@Article{Steinberger+2002,
-  author =	 {Bernhard Steinberger and Richard Holme},
-  title =	 {An explanation for the shape of {E}arth's gravity
-                  spectrum based on viscous mantle flow models},
-  journal =	 GRL,
-  year =	 2002,
-  volume =	 29,
-  number =	 21,
-  pages =	 {2019, doi: {10.1029/2002GL015476}}
+  pages =	 {2019, doi: 10.1029/2002GL015476}
 }
 
 @Article{Steinberger+2004,
@@ -33118,6 +33584,16 @@
                   Networks and Digital Signal Processing (CSNDSP)",
   year =	 2002,
   organization = "School of Computing, Staffordshire University, UK"
+}
+
+@article{Stern2002,
+  title =	 {Subduction zones},
+  author =	 {Robert J. Stern},
+  journal =	 RG,
+  volume =	 40,
+  number =	 4,
+  pages =	 {3-1--3-38, doi: 10.1029/2001RG000108},
+  year =	 2002
 }
 
 @article{Stevenson2001,
@@ -33643,7 +34119,7 @@
   title =	 {On the spectral approximation of discrete scalar and
                   vector functions on the sphere},
   author =	 {P. N. Swarztrauber},
-  journal =	 {SIAM J.~Numer.~Anal.},
+  journal =	 SIJNA,
   volume =	 16,
   number =	 6,
   pages =	 {934--949},
@@ -33912,6 +34388,32 @@
   address =	 "San Diego, Calif."
 }
 
+@Article{Talandier+1998,
+  author =	{Jacques Talandier and Emile A. Okal},
+  title =	{On the mechanism of conversion of seismic waves to and from
+                  {T} waves in the vicinity of island shores},
+  journal =	BSSA,
+  year =	1998,
+  volume =	88,
+  number =	2,
+  pages =	{621--632}
+}
+
+@InCollection{Talandier+2001,
+  author =	 {Jacques Talandier and Emile A. Okal},
+  title =	 {Identification criteria for sources of {\textit{T}}
+                  waves recorded in {F}rench {P}olynesia},
+  journal =	 PAGEOPH,
+  year =	 2001,
+  volume =	 158,
+  pages =	 {567--603, doi: 10.1007/978-3-0348-8270-5\_7},
+  booktitle =	 {Monitoring the Comprehensive Nuclear-Test-Ban
+                  Treaty: {H}ydroacoustics},
+  editor =	 {Catherine deGroot-Hedlin and John Orcutt},
+  publisher =	 {Birkh{\"a}user},
+  address =	 {Basel}
+}
+
 @Article{Talwani+60,
   author =	 {Manik Talwani and Maurice Ewing},
   title =	 {Rapid computation of gravitational attraction of
@@ -33947,6 +34449,33 @@
   number =	 1,
   pages =	 {81--93},
   year =	 2003
+}
+
+@Article{Tanaka+2009a,
+  author =	 {S. Tanaka and M. Obayashi and D. Suetsugu and
+                  H. Shiobara, H. Sugioka and J. Yoshimitsu and
+                  T. Kanazawa and Y. Fukao and G. Barruol},
+  title =	 {{P}-wave tomography of the mantle beneath the
+                  {S}outh {P}acific {S}uperswell revealed by joint
+                  ocean floor and islands broadband seismic
+                  experiments},
+  year =	 2009,
+  journal =	 PEPI,
+  volume =	 172,
+  pages =	 {268--277, doi: 10.1016/j.pepi.2008.10.016},
+}
+
+@Article{Tanaka+2009b,
+  author =	 {S. Tanaka and D. Suetsugu and H. Shiobara and
+                  H. Sugioka and T. Kanazawa and Y. Fukao and
+                  G. Barruol and D. Reymond},
+  title =	 {On the vertical extent of the large low shear
+                  velocity province beneath the {S}outh {P}acific
+                  {S}uperswell},
+  year =	 2009,
+  journal =	 GRL,
+  volume =	 36,
+  pages =	 {L07305, doi: 10.1029/2009GL037568},
 }
 
 @booklet{Tanaka+2014,
@@ -34435,6 +34964,19 @@
   pages =	 {doi: 10.1029/2012GC004162}
 }
 
+@Article{Tesoniero+2015,
+  author =	 {Andrea Tesoniero and Ludwig Auer and Lapo Boschi and
+                  Fabio Cammarano},
+  title =	 {Hydration of marginal basins and compositional
+                  variations within the continental lithospheric
+                  mantle inferred from a new global model of shear and
+                  compressional velocity},
+  year =	 2015,
+  journal =	 JGR,
+  volume =	 120,
+  pages =	 {7789--7813, doi: 10.1002/2015JB012026}
+}
+
 @Article{Tessler+2015,
   author =	 {Z. D. Tessler and C. J. V\"o\"rosmarty and
                   M. Grossberg and I. Gladkova and H. Aizenman and
@@ -34910,7 +35452,7 @@
 
 @Book{Tikhonov+77,
   author =	 "Andrey N. Tikhonov and Vasiliy Y. Arsenin",
-  title =	 "Solutions of ill-posed problems",
+  title =	 "Solutions of Ill-posed Problems",
   publisher =	 "V.~H.~Winston \& Sons",
   address =	 "Washington D.~C.",
   year =	 1977
@@ -35878,7 +36420,7 @@
   title =	 {Probing the {P}areto frontier for basis pursuit
                   solutions},
   author =	 {Ewout van den Berg and Michael P. Friedlander},
-  journal =	 {SIAM J.~Sci.~Comput.},
+  journal =	 SIJSC,
   volume =	 31,
   number =	 2,
   pages =	 {890--912, doi: {10.1137/080714488}},
@@ -36247,9 +36789,9 @@
 }
 
 @Article{Versteeg93,
+  author =	 {Roelof Jan Versteeg},
   title =	 {Sensitivity of prestack depth migration to the
                   velocity model},
-  author =	 {Roelof Jan Versteeg},
   journal =	 GP,
   volume =	 58,
   number =	 6,
@@ -37690,6 +38232,7 @@
   journal =	 {Biometrika}
 }
 
+
 @Book{Whittle83,
   author =	 {Peter Whittle},
   title =	 {Prediction and regulation by linear least-square
@@ -37889,7 +38432,6 @@
   pages =	 {227--232}
 }
 
-
 @Article{Wielandt75,
   author =	 {E. Wielandt},
   title =	 {Generation of seismic waves by underwater
@@ -38049,6 +38591,7 @@
   pages =	 {5778, doi: 10.1038/s41467-019-13262-7}
 }
 
+
 @Article{Williamson+93,
   author =	 {Paul R. Williamson and M. H. Worthington},
   title =	 {Resolution limits in ray tomography due to wave
@@ -38079,6 +38622,16 @@
   year =	 2008,
   volume =	 113,
   pages =	 {C12017, doi: {10.1029/2007JC004690}}
+}
+
+@Article{Wilson1973,
+  title =	 {Mantle plumes and plate motions},
+  author =	 {J. Tuzo Wilson},
+  journal =	 {Tectonophysics},
+  volume =	 19,
+  number =	 2,
+  pages =	 {149--164, doi: 10.1016/0040-1951(73)90037-1},
+  year =	 1973
 }
 
 @Article{Wilson66,
@@ -38904,6 +39457,15 @@
   year =	 2008
 }
 
+@Book{Yilmaz2001,
+  author =	 {{\"O}zdo{\u{g}}an Yilmaz},
+  title =	 {Seismic Data Analysis},
+  publisher =	 {Soc.~Explor.~Geophys.},
+  year =	 2001,
+  volume =	 {1--2},
+  address =	 {Tulsa, OK}
+}
+
 @Article{Yogodzinski+2001,
   author =	 {G. M. Yogodzinski and J. M. Lees and T. G. Churikova
                   and F. Dorendorf and G. W{\"o}erner and
@@ -39282,7 +39844,7 @@
   author =	 "Ming Zhang and P. J. Stephenson and Suzanne
                   Y. O'Reilly and Malcolm T. Mc{C}ulloch and Marc
                   Norman",
-  title =	 "Petrogenesis and Geodynamic implications of {L}ate
+  title =	 "Petrogenesis and geodynamic implications of {L}ate
                   {C}enozoic basalts in {N}orth {Q}ueensland,
                   {A}ustralia: {T}race element and {S}r-{N}d-{P}b
                   isotope evidence",
@@ -39633,6 +40195,7 @@
   pages =	 {1087--1111, doi: 10.1111/j.1365-246X.2005.02780.x}
 }
 
+
 @Article{Zhou+84,
   author =	 {Y. Zhou and C. K. Rushforth and R. L. Frost},
   title =	 {Singular value decomposition, singular vectors, and
@@ -39945,28 +40508,6 @@
   type =	 {{A.~B.~Thesis}}
 }
 
-@Article{vandenBroeke+2012,
-  author =	 {Michiel R. Van den Broeke and Jonathan Bamber and
-                  Jan Lenaerts and Eric Rignot},
-  title =	 {Ice sheets and sea level: {T}hinking outside the
-                  box},
-  journal =	 {Surv.~Geophys.},
-  year =	 2011,
-  volume =	 32,
-  pages =	 {495–-505, doi: 10.1007/s10712-011-9137-z}
-}
-
-@Article{Christensen+1989,
-  title =	 {Time-dependent convection with non-{N}ewtonian
-                  viscosity},
-  author =	 {Ulrich R. Christensen and David A. Yuen},
-  journal =	 JGR,
-  volume =	 94,
-  number =	 {B1},
-  pages =	 {814--820, doi: 10.1029/JB094iB01p00814},
-  year =	 1989
-}
-
 @Article{vandenBerg+1993,
   title =	 {The effects of a composite non-{N}ewtonian and
                   {N}ewtonian rheology on mantle convection},
@@ -39979,40 +40520,24 @@
   year =	 1993
 }
 
-@Article{Parmentier+1976,
-  title =	 {Studies of finite amplitude non-{N}ewtonian thermal
-                  convection with application to convection in the
-                  {E}arth's mantle},
-  author =	 {Edgar Mark Parmentier and Donald L. Turcotte and
-                  K. E. Torrance},
-  journal =	 JGR,
-  volume =	 81,
-  number =	 11,
-  pages =	 {1839--1846, doi: 10.1029/JB081i011p01839},
-  year =	 1976
+@Article{vandenBroeke+2012,
+  author =	 {Michiel R. Van den Broeke and Jonathan Bamber and
+                  Jan Lenaerts and Eric Rignot},
+  title =	 {Ice sheets and sea level: {T}hinking outside the
+                  box},
+  journal =	 {Surv.~Geophys.},
+  year =	 2011,
+  volume =	 32,
+  pages =	 {495–-505, doi: 10.1007/s10712-011-9137-z}
 }
 
-@Article{Horbach+2014,
-  title =	 {The adjoint method in geodynamics: derivation from a
-                  general operator formulation and application to the
-                  initial condition problem in a high resolution
-                  mantle circulation model},
-  author =	 {Andr{\'e} Horbach and Hans-Peter Bunge and Jens
-                  Oeser},
-  journal =	 GEM,
-  volume =	 5,
-  number =	 2,
-  pages =	 {163--194, doi: 10.1007/s13137-014-0061-5},
-  year =	 2014
-}
-
-@Article{Ghelichkhan+2016,
-  title =	 {The compressible adjoint equations in geodynamics:
-                  {d}erivation and numerical assessment},
-  author =	 {Siavash Ghelichkhan and Hans-Peter Bunge},
-  journal =	 GEM,
-  volume =	 7,
-  number =	 1,
-  pages =	 {1--30, doi: 10.1007/s13137-016-0080-5},
-  year =	 2016
+@Article{Ma+2012,
+  title =	 {Quasi-{N}ewton full-waveform inversion with a
+                  projected {H}essian matrix},
+  author =	 {Yong Ma and Dave Hale},
+  journal =	 GP,
+  volume =	 77,
+  number =	 5,
+  pages =	 {R207--R216, doi: 10.1190/GEO2011-0519.1},
+  year =	 2012
 }
