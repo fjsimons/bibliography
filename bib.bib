@@ -2,14 +2,15 @@
 % https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html                                
 % The rules of Frederik
 % 1. Separate middle names with space (F. A.)
-% 2. Always use strings without {}
-% 3. Journal titles are always lower case unless with {}
-% 4. Publisher for books only
-% 5. Title case for book titles
-% 6. Sort and align ref.bib
-% 7. Never trust Google scholar, always check everything 
-% 8. Check and protect the cases of the beginning of the subtitles
-% 9. Page ranges are double dashes                                                               
+% 2. Always use strings without {} or ""
+% 3. Journal titles are always lower case unless protected with {}
+% 4. Check and protect the cases of the beginning of the subtitles
+% 5. Title Case Only for Book Titles
+% 6. List publisher and address for books only
+% 7. Sort and align... use the Emacs keybindings!
+% 8. Never trust Google scholar, always check everything 
+% 9. Page ranges are double dashes
+% 10. Hand-editing your BibTeX file is a COGNITIVE act!
 @string{AAS = {Ann.~Appl.~Stat.}}
 @string{ACHA = {Appl.~Comput.~Harmon.~Anal.}}
 @string{ACM = {ACM T.~Math.~Software}}
@@ -2797,6 +2798,19 @@
   number =	 3,
   pages =	 {1239--1260, doi: 10.1111/j.1365-246X.2007.03374.x},
   year =	 2007
+}
+
+@Article{Bent+2018,
+  title =	 {Real-time seismic monitoring in Haiti and some
+                  applications},
+  author =	 {Allison L. Bent and John Cassidy and Clause
+                  Pr{\'e}petit and Maurice Lamontagne and Sophia
+                  Ulysse},
+  journal =	 SRL,
+  volume =	 89,
+  number =	 {2A},
+  pages =	 {407--415, doi: 10.1785/0220170176},
+  year =	 2018
 }
 
 @InCollection{Bercovici+2000,
@@ -9813,6 +9827,8 @@
   pages =	 {3863--3878, doi: 10.1029/JZ066i011p03863}
 }
 
+
+
 @Article{Ewing69,
   author =	 {J. Ewing and R. Leyden and M. Ewing},
   title =	 {Refraction shooting with expendable sonobuoys},
@@ -9822,8 +9838,6 @@
   number =	 1,
   pages =	 {174--181}
 }
-
-
 
 @article{Fairen+2002,
   author =	 {Alberto G. Fair{\'e}n and Javier Ruiz and Francisco
@@ -12988,17 +13002,6 @@
   pages =	 {707--711}
 }
 
-@Article{Guo+2010,
-  author =	 {J. Y. Guo and X. J. Duan and C. K. Shum},
-  title =	 {Non-isotropic {G}aussian smoothing and leakage
-                  reduction for determining mass changes over land and
-                  ocean using {GRACE} data},
-  journal =	 GJI,
-  year =	 2010,
-  volume =	 181,
-  pages =	 {290--302, doi: {10.1111/j.1365-246X.2010.04534.x}}
-}
-
 @Conference{Hansen2000,
   author =	 "P. C. Hansen",
   title =	 "The {L}-curve and its use in the numerical treatment
@@ -13009,6 +13012,17 @@
   series =	 "Advances in Computational Bioengineering",
   editor =	 "P. Johnston",
   publisher =	 "{WIT} Press",
+}
+
+@Article{Guo+2010,
+  author =	 {J. Y. Guo and X. J. Duan and C. K. Shum},
+  title =	 {Non-isotropic {G}aussian smoothing and leakage
+                  reduction for determining mass changes over land and
+                  ocean using {GRACE} data},
+  journal =	 GJI,
+  year =	 2010,
+  volume =	 181,
+  pages =	 {290--302, doi: {10.1111/j.1365-246X.2010.04534.x}}
 }
 
 @Article{Guo+2012,
@@ -13441,6 +13455,8 @@
   year =	 1997,
   volume =	 289,
   pages =	 {285--294}
+},
+  year =	 2008
 }
 
 @Article{Hamilton97b,
@@ -13452,8 +13468,6 @@
   year =	 1997,
   volume =	 289,
   pages =	 {285--294}
-},
-  year =	 2008
 }
 
 @Article{Hammond+2019,
@@ -16215,7 +16229,7 @@
   year =	 1999,
   volume =	 75,
   pages =	 {85--101}
-}
+},
 
 @Article{Jellinek+2002,
   author =	 {A. Mark Jellinek and Adrian Lenardic and Michael
@@ -16228,7 +16242,7 @@
   volume =	 29,
   number =	 11,
   pages =	 {1532, doi: 10.1029/2001GL014624}
-},
+}
 
 @Article{Jellinek+2003,
   author =	 {A. Mark Jellinek and Helge M. Gonnermann and Mark
@@ -16588,6 +16602,7 @@
   pages =	 {170--186}
 }
 
+
 @Article{Joubert+2015,
   author =	 {C\'ecile Joubert and Guust Nolet and Alexey
                   Sukhovich and Anthony Og\'e and Jean-Fran{\c{c}}ois
@@ -16599,7 +16614,6 @@
   number =	 3,
   pages =	 {1797--1802, doi: 10.1785/0120140265}
 }
-
 
 @article{Joubert+2016,
   title =	 {\textit{{P}}-delays from floating seismometers ({MERMAID}),
@@ -22741,6 +22755,7 @@
   pages =	 "1903--1915"
 }
 
+
 @Article{McKenzie+83,
   author =	 {Dan P. McKenzie and James Jackson},
   title =	 {The relationship between strain rates, crustal
@@ -22751,7 +22766,6 @@
   volume =	 65,
   pages =	 {182--202}
 }
-
 
 @Article{McKenzie+97,
   author =	 "Dan P. McKenzie and J. Derek Fairhead",
@@ -23702,6 +23716,7 @@
   pages =	 "497--514"
 }
 
+
 @Article{Mitchell+98a,
   author =	 "Brian J. Mitchell and S. Baqer and A. Akinci and
                   L. Cong",
@@ -23712,7 +23727,6 @@
   volume =	 153,
   pages =	 "639--653"
 }
-
 
 @Article{Mitchell+98b,
   author =	 "Brian J. Mitchell and Lianli Cong",
@@ -25001,6 +25015,7 @@
   pages =	 "2501--2504"
 }
 
+
 @Article{Ni+2003,
   title =	 {Seismological constraints on the {S}outh {A}frican
                   superplume; could be the oldest distinct structure
@@ -25012,7 +25027,6 @@
   pages =	 {119--131},
   year =	 2003
 }
-
 
 @Book{Nicolas+76,
   author =	 "Adolphe Nicolas and Jean-Paul Poirier",
@@ -25669,6 +25683,7 @@
   volume = 	 15,
   pages = 	 {267--273}}
 
+
 @Article{Ojeda+2002,
   author =	 {German Y. Ojeda and Dean Whitman},
   title =	 {Effect of windowing on lithosphere elastic thickness
@@ -25680,7 +25695,6 @@
   number =	 {B11},
   pages =	 {2275, doi: {10.1029/2000JB000114}}
 }
-
 
 @Article{Okal+2007,
   author =	 {Emile A. Okal and Jacques Talandier and Dominique
@@ -27168,6 +27182,7 @@
   pages =	 {83, doi: 10.1038/371083a0}
 }
 
+
 @Article{Piao+2010,
   author =	 {Shilong Piao and Philippe Ciais and Yao Huang and
                   Zehao Shen and Shushi Peng and Junsheng Li and
@@ -27183,7 +27198,6 @@
   volume =	 467,
   year =	 2010,
 }
-
 
 @Article{Piazzoni+2007,
   title =	 {A mineralogical model for density and elasticity of
@@ -28347,6 +28361,18 @@
   volume =	 96,
   number =	 "B12",
   pages =	 "19781--19810"
+}
+
+@Article{Reymond+2003,
+  title =	 {{\textit{T}}-Wave detection of two underwater
+                  explosions off {H}awaii on 13 April 2000},
+  author =	 {Dominique Reymond and Olivier Hyvernaud and Jacques
+                  Talandier and Emile A. Okal},
+  journal =	 BSSA,
+  volume =	 93,
+  number =	 2,
+  pages =	 {804--816, doi: 10.1785/0120010296},
+  year =	 2003
 }
 
 @Article{Reynolds+2002,
@@ -30469,7 +30495,6 @@
   volume =	 125,
   pages =	 {531--539}
 }
-
 @Article{Schroeder+2001,
   author =	 {Christoph T. Schr{\"o}der and Waymond R. Scott, Jr.},
   title =	 {On the complex conjugate roots of the {R}ayleigh
@@ -30492,6 +30517,7 @@
   address =	 {Los Angeles},
   pages =	 {161--172, doi: {10.1145/218380.218439}}
 }
+
 @Book{Schubert+2001,
   author =	 {Gerald Schubert and Donald L. Turcotte and Peter
                   Olson},
@@ -30535,7 +30561,7 @@
   volume =	 16,
   number =	 10,
   pages =	 {1961--1970}
-}
+},
 
 @Article{Schulten+76,
   author =	 {K. Schulten and R. G. Gordon},
@@ -30556,7 +30582,7 @@
   volume =	 1,
   number =	 2,
   pages =	 {90--91, doi: {10.1038/ngeo120}}
-},
+}
 
 @Article{Schumacher+2016,
   author =	 {F. Schumacher and W. Friederich and S. Lamara},
@@ -30845,7 +30871,7 @@
   volume =	 307,
   number =	 5715,
   pages =	 {1615--1618}
-}
+},
 
 @Article{Shapiro+99a,
   author =	 "Steve S. Shapiro and Bradford H. Hager and Thomas
@@ -30869,7 +30895,7 @@
   volume =	 48,
   number =	 "1--4",
   pages =	 "135--152"
-},
+}
 
 @Article{Sharifi+2014,
   author =	 {Mohammad Ali Sharifi and Saeed Farzaneh},
@@ -31887,7 +31913,7 @@
   editor =	 {Willi Freeden and M. Zuhair Nashed and Thomas Sonar},
   address =	 {Heidelberg, Germany}
 }
-
+ 
 @Article{Simons+97,
   author =	 "Frederik J. Simons and Fr{\'e}d{\'e}ric Verhelst and
                   Rudy Swennen",
@@ -31911,7 +31937,7 @@
   volume =	 131,
   pages =	 "24--44"
 }
- 
+
 @Article{Simons+97b,
   author =	 "Mark Simons and Bradford H. Hager",
   title =	 "Localization of the gravity field and the signature
@@ -32633,6 +32659,8 @@
   pages =	 {043001, doi: 10.1103/PhysRevD.76.043001}
 }
 
+@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
+
 @Article{Smrekar+2003a,
   author =	 {Suzanne E. Smrekar and Robert Comstock and F. Scott
                   Anderson},
@@ -32654,8 +32682,6 @@
   number =	 {E8},
   pages =	 {5091, doi: {10.1029/2002JE001930}}
 }
-
-@Comment Chou C. W. and Booker, J. R., (1979). A Backus-Gilbert approach to inversion of travel time data for three-dimensional velocity structure, Geophys. J. R. astr. Soc., 59, 325-344.
 
 @Article{Sneeuw+96,
   author =	 {Nico Sneeuw and R. Bun},
@@ -34528,6 +34554,32 @@
   publisher =	 {Birkh{\"a}user},
   address =	 {Basel}
 }
+
+@Article{Talandier+2002,
+  title =	 {Long-range detection of hydroacoustic signals from
+                  large icebergs in the {R}oss {S}ea, {A}ntarctica},
+  author =	 {Jacques Talandier and Olivier Hyvernaud and Emile
+                  A. Okal and Pierre-Franck Piserchia},
+  journal =	 EPSL,
+  volume =	 203,
+  number =	 1,
+  pages =	 {519--534, doi: 10.1016/S0012-821X(02)00867-1},
+  year =	 2002
+}
+
+@Article{Talandier+2016,
+  title =	 {Unusual seismic activity in 2011 and 2013 at the
+                  submarine volcano {R}ocard, {S}ociety hot spot
+                  ({F}rench {P}olynesia)},
+  author =	 {Jacques Talandier and Olivier Hyvernaud and Ren{\'e}
+                  Maury C.},
+  journal =	 GRL,
+  volume =	 43,
+  number =	 9,
+  pages =	 {4247--4254, doi: 10.1002/2016GL068342},
+  year =	 2016
+}
+
 
 @Article{Talwani+60,
   author =	 {Manik Talwani and Maurice Ewing},
@@ -39115,6 +39167,21 @@
   year =	 2013
 }
 
+@Article{Wright+2008,
+  title =	 {Collapse and reconstruction of {M}onowai submarine
+                  volcano, {K}ermadec arc, 1998--2004},
+  author =	 {Ian C. Wright and William W. Chadwick Jr and de
+                  Cornel EJ Ronde and Dominique Reymond and Olivier
+                  Hyvernaud and Hans-Hermann Gennerich and Peter
+                  Stoffers and Kevin Mackay and Miles A. Dunkin and
+                  Stephen C.  Bannister},
+  journal =	 JGR,
+  volume =	 113,
+  number =	 {B8},
+  pages =	 {B08S03, doi: 10.1029/2007JB005138},
+  year =	 2008
+}
+
 @Article{Wu+2006,
   author =	 {Yih-Min Wu and Hsin-Yi Yen and Li Zhao and Bor-Shouh
                   Huang and Wen-Tzong Liang},
@@ -40299,6 +40366,7 @@
   pages =	 "15287--15299"
 }
 
+
 @Article{Zhou+2004,
   author =	 {Ying Zhou and F. A. Dahlen and G. Nolet},
   title =	 {Three-dimensional sensitivity kernels for surface
@@ -40309,7 +40377,6 @@
   number =	 1,
   pages =	 {142--168, doi: 10.1111/j.1365-246X.2004.02324.x}
 }
-
 
 @Article{Zhou+2005,
   author =	 {Ying Zhou and F. A. Dahlen and G. Nolet},
@@ -40522,6 +40589,7 @@
   pages =	 "2053--2060"
 }
 
+
 @Article{Zuber2001,
   author =	 {Maria T. Zuber},
   title =	 {The crust and mantle of {M}ars},
@@ -40530,7 +40598,6 @@
   volume =	 412,
   pages =	 {220--227}
 }
-
 
 @Article{Zwally+2011,
   title =	 {Greenland ice sheet mass balance: distribution of
@@ -40578,19 +40645,6 @@
   school =	 {Princeton University},
   year =	 2018,
   type =	 {Junior Paper}
-}
-
-@Article{Bent+2018,
-  title =	 {Real-time seismic monitoring in Haiti and some
-                  applications},
-  author =	 {Allison L. Bent and John Cassidy and Clause
-                  Pr{\'e}petit and Maurice Lamontagne and Sophia
-                  Ulysse},
-  journal =	 SRL,
-  volume =	 89,
-  number =	 {2A},
-  pages =	 {407--415, doi: 10.1785/0220170176},
-  year =	 2018
 }
 
 @Article{deRonde+2011-egs,
