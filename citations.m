@@ -7,7 +7,7 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 02/03/2021
+% Last modified by fjsimons-at-alum.mit.edu, 02/20/2021
 
 % Check the SSP-2012
 % citations, many of which are wrong
