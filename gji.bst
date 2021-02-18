@@ -1,4 +1,3 @@
-%% 
 %% This is file `gji.bst',
 %% ---------------------------------------- 
 %% *** For Geophysical Journal International *** 
