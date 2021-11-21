@@ -1,4 +1,4 @@
-%% This is file `gji.bst',
+%% This is file `gji.bst'
 %% ---------------------------------------- 
 %% *** For Geophysical Journal International *** 
 %%    based on egs.bst 
