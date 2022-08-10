@@ -54,6 +54,7 @@
 @String { JPA      = {J. Phys. A:\ Math. Gen.} }
 @String { JPB      = {J. Phys. B:\ Mol. Opt. Phys} }
 @String { JPO      = {J. Phys. Oceanog.} }
+@String { JRSSB    = {J. R. Stat. Soc., Ser. B} }
 @String { KL       = {Geomathematics Group, Dept. Mathematics, Univ. Kaiserslautern} }
 @String { MNRAS    = {Mon. Not. R. Astron. Soc} }
 @String { NCOMMS   = {Nature Commun.} }
@@ -294,6 +295,18 @@
   Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/GJI-2021a.pdf}
 }
 
+@Article{Guillaumin+2022,
+  Title                    = {The debiased spatial {W}hittle likelihood},
+  Author                   = {Arthur P. Guillaumin and Adam M. Sykulski and Sofia Charlotta Olhede and \textbf{Frederik J. Simons}},
+  Journal                  = JRSSB,
+  Year                     = {2022},
+  Pages                    = {1-32},
+  Abstract                 = {We provide a computationally and statistically efficient method for estimating the parameters of a stochastic covariance model observed on a regular spatial grid in any number of dimensions. Our proposed method, which we call the Debiased Spatial Whittle likelihood, makes important corrections to the well-known Whittle likelihood to account for large sources of bias caused by boundary effects and aliasing. We generalize the approach to flexibly allow for significant volumes of missing data including those with lower-dimensional substructure, and for irregular sam- pling boundaries. We build a theoretical framework under relatively weak assumptions which ensures consistency and asymptotic normality in numerous practical settings including missing data and non-Gaussian processes. We also extend our consistency results to multivariate processes. We provide detailed implementation guidelines which ensure the estimation procedure can still be conducted in O(n log n) operations, where n is the number of points of the encapsulating rectangular grid, thus keeping the computational scalability of Fourier and Whittle-based methods for large data sets. We validate our procedure over a range of simulated and real world settings, and compare with state-of-the-art alternatives, demonstrating the enduring practical appeal of Fourier-based methods, pro-vided they are corrected by the procedures developed in this paper.},
+  Doi                      = {10.1111/rssb.12539},
+  File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/JRSSB-2022.pdf:PDF},
+  Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/JRSSB-2022.pdf}
+}
+
 @Article{Han+2008a,
   Title                    = {Spatiospectral localization of global geopotential fields from the {G}ravity {R}ecovery and {C}limate {E}xperiment {(GRACE}) reveals the coseismic gravity change owing to the 2004 {S}umatra-{A}ndaman earthquake},
   Author                   = {Shin-Chan Han and \textbf{Frederik J. Simons}},
@@ -488,6 +501,33 @@
   Doi                      = {10.1190/segam2021-3582871.1},
   File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/SEG-2021b.pdf:PDF},
   Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/SEG-2021b.pdf}
+}
+
+@InProceedings{Liu+2022,
+  Title                    = {3-{D} acoustic-elastic full-waveform inversion and migration of marine {VSP} data from {N}orway},
+  Author                   = {Zhaolun Liu and J\"urgen Hoffmann and \textbf{Frederik J. Simons} and Jeroen Tromp},
+  Booktitle                = SEG,
+  Year                     = {2022},
+  Address                  = {Denver, Col.},
+  Organization             = {Soc.~Explor.~Geophys.},
+  Pages                    = {XX},
+  Abstract                 = {We demonstrate an application of three-dimensional (3-D) elastic-acoustic coupled Full-Waveform Inversion (FWI) to deviated Rig-source Vertical Seismic Profile (R-VSP) data from the Fenja Field in Norway, to advance our understanding of subsurface structure. We perform 3-D Reverse-Time Migration (RTM) of the data using the inverted wave speed models. The RTM results show that the structures in our 3-D compressional speed (VP) image are a better match with those obtained from surface seismic imaging, compared to the legacy 2-D ray-based migration image. The resolution of our shear wave speed (VS ) image is higher than that of the VP image due to the smaller reflection angle of P-to-S converted waves compared to that of P-to-P reflections. Our VS and density (ρ) images yield additional structural information.},
+  File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/SEG-2022.pdf:PDF},
+  Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/SEG-2022.pdf}
+}
+
+@Article{Liu+2022a,
+  Title                    = {Full-waveform centroid moment tensor inversion of passive seismic data acquired at the hydrocarbon exploration scale},
+  Author                   = {Qiancheng Liu and Umair bin Waheed and Dmitry Borisov and \textbf{Frederik J. Simons} and Fuchun Gao and Paul Williamson},
+  Journal                  = GJI,
+  Year                     = {2022},
+  Number                   = {3},
+  Pages                    = {1725-1750},
+  Volume                   = {230},
+  Abstract                 = {Passive seismic inversion at the reservoir scale offers the advantages of low cost, negligible environmental impact and the ability to probe a target area with low-frequency energy not afforded by even the most modern active-source seismic technology. In order to build starting models suitable for full-waveform wave speed tomography, characterization of earthquake sources is an indispensable first step. We present a workflow for the centroid moment tensor (CMT) inversion of seismic events identified in a passive seismic data set acquired by a large and dense array of three-component broad-band seismic sensors in a mountainous setting in the Himalayan foothills. The data set comprised 256 instruments operating for 2×4 months over an area of 8000 km2. An initial 3-D wave speed model was determined for the region via the analysis of first-arriving traveltime picks. Of the 2607 identified seismic events that were well recorded at frequencies between 0.2–50 Hz, 86 with magnitudes 1.3 ≤ M ≤ 3.0 initially had their CMT focal mechanisms determined by a waveform fitting procedure built on a Green’s function approach in a 1-D layered average wave speed model, for stations within an offset of 10 km, in the frequency range 0.2–1.4 Hz. Here, we obtain updated CMT mechanisms for the 86 events in that catalogue via multicomponent full-waveform inversion in the 3-D wave speed model. Our workflow includes automated data- and model-driven data selection using a combination of different metrics derived from signal-to-noise considerations and waveform- fitting criteria, and relies upon spectral-element simulations of elastic wave propagation in the 3-D wave speed model, honouring topography. Starting from the initial CMT solutions, we seek improvement to the data fit within the frequency band 0.5–2.5 Hz by minimizing the waveform difference between observed and synthetic data, while accommodating wave speed-model errors by allowing for small time-shifts. We balance uneven data coverage and tune their contributions via data-space weighting functions. We quantify the improvements to the data fit in terms of different metrics. We summarize the changes to the CMT solutions, and present and analyse the resulting catalogue for the region, including their breakdown into double-couple and non-double couple components, and their relation to mapped faults.},
+  Doi                      = {10.1093/gji/ggac137},
+  File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/GJI-2022c.pdf:PDF},
+  Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/GJI-2022c.pdf}
 }
 
 @Article{Maloof+2010,
@@ -1050,6 +1090,18 @@
   Doi                      = {10.1121/AT.2021.17.2.42},
   File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/AT-2021.pdf:PDF},
   Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/AT-2021.pdf}
+}
+
+@Article{Simons+2021b,
+  Title                    = {Waarde Redactie | Open Brief},
+  Author                   = {\textbf{Frederik J. Simons}},
+  Journal                  = {Alumni for Alumni},
+  Year                     = {2021},
+  Number                   = {3},
+  Pages                    = {73--76},
+  Volume                   = {2},
+  File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/OLVC-2021.pdf:PDF},
+  Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/OLVC-2021.pdf}
 }
 
 @Article{Simons+97,
