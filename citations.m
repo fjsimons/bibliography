@@ -7,7 +7,7 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 3/23/2023
+% Last modified by fjsimons-at-alum.mit.edu, 4/18/2023
 
 % Finally time to add the SPIE citations? No, they do not exist as independent records
 % 2009 - 18 citations by 2023;
@@ -101,7 +101,7 @@ PubDate.IP2017=[11 2017]; % Volker Michel
 PubDate.PNAS2019=[1 2019]; % Bevis
 PubDate.SREP2019=[2 2019]; % Galapagos
 PubDate.APJL2019=[4 2019]; % Galanti
-% PubDate.GJI2020=[2 2020]; % Yanhua3 exponentiated
+PubDate.GJI2020=[2 2020]; % Yanhua3 exponentiated
 PubDate.BSSA2020=[6 2020]; % Joel1
 PubDate.PNAS2020=[11 2020]; % Love
 % PubDate.GEM2020=[11 2020]; % Reuber
@@ -646,7 +646,7 @@ Citations.GJI2016=[12 2016 ; 11 2016 ;  6 2018 ;  9 2018 ;  7 2018 ;  5 2018 ; .
 	 	    2 2019 ;  6 2019 ;  9 2019 ;  1 2020 ;  5 2020 ;  5 2020 ; ...
 		    4 2020 ;  3 2020 ;  5 2020 ;  5 2020 ;  9 2020 ; 10 2020 ; ...
 		   12 2020 ;  1 2020 ; 11 2021 ;  1 2022 ;  4 2022 ;  4 2022 ; ...
-		    5 2022 ; 10 2022];
+		    5 2022 ; 10 2022 ;  2 2023];
 % Plattner External GJI
 Citations.GJI2017=[12 2017 ;  1 2018 ;  7 2018 ; 10 2018 ; 12 2018 ;  3 2019 ; ...
 		    4 2019 ;  6 2019 ;  1 2020 ;  2 2020 ;  8 2020 ; 11 2020 ; ...
@@ -689,8 +689,8 @@ Citations.PNAS2020=[  1 2021 ;  4 2021 ;  4 2021 ;  7 2021 ;  8 2021 ;  9 2021 ;
 Citations.BSSA2020=[  2 2021 ;  2 2021 ;  1 2022 ;  11 2021 ;  5 2022 ; 1 2022];
 % Yanhua IV exponentiated
 Citations.GJI2020=[  4 2021 ;  7 2021 ;  9 2021 ;  1 2022 ;  1 2022 ; 2 2022 ;  3 2022 ; ...
-		     5 2022 ;  7 2022 ;  7 2022 ;  8 2022 ; 11 2022];
-%Citations.GEM2020=[ 8 2021 ; 12 2021 ; 6 2022]; % Georg Reuber
+		     5 2022 ;  7 2022 ;  7 2022 ;  8 2022 ; 11 2022 ; 3 2023];
+% Citations.GEM2020=[ 8 2021 ; 12 2021 ; 6 2022]; % Georg Reuber
 % Citations.JGR2021=[ 11 2021]; % Alex Burky
 % Citations.JGS2018=[  5 2021 ; 2 2022 ; 5 2022]; Aly Beveridge
 % Lucia Gualtieri seasonal
