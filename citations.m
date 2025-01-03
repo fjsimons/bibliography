@@ -9,34 +9,56 @@ function varargout=citations
 %
 % Last modified by fjsimons-at-alum.mit.edu, 01/02/2025
 
+% EOS citations
+% A suite of software analyzes data on the sphere (2015)
+%  30 https://scholar.google.com/scholar?cites=17810315684376786911
+%  21 https://app.dimensions.ai/details/publication/pub.1056348401
+%  19 https://plu.mx/plum/a/?doi=10.1029%2F2015EO025851
 % SPIE citations
-% A spatiospectral   2013 -  5 GS citations by 2024;
-% Wavelets and wave  2011 - 33 GS citations by 2024;
-% https://www.webofscience.com/wos/woscc/full-record/WOS:000297583100025
-% Efficient analysis 2009 - 18 GS citations by 2024;
-% httpssimons://www.webofscience.com/wos/woscc/summary/de78e240-24c7-43a6-8e54-07c5ad7c92de-e52787e3/date-descending/1
-% A spatiospectral   2007 - 10 GS citations by 2024;
-% https://www.webofscience.com/wos/woscc/full-record/WOS:000252227400036
-
-% Check the SSP-2012 citations, many of which are wrong
-
+% A spatiospectral localization approach for analyzing etc (2013)
+%   5 https://scholar.google.com/scholar?cites=9894613516791553460
+%   5 https://badge.dimensions.ai/details/id/pub.1023253533
+%   2 https://plu.mx/plum/a/?doi=10.1117/12.2024703
+%   0 https://www.webofscience.com/wos/woscc/full-record/WOS:000326764600017
+% Wavelets and wavelet -like transforms on the sphere etc (2011)
+%  34 https://scholar.google.com/scholar?cites=4631479886696000108
+%  19 https://badge.dimensions.ai/details/id/pub.1027737997
+%  16 https://plu.mx/plum/a/?doi=10.1117%2F12.892285
+%   5 https://www.webofscience.com/wos/woscc/full-record/WOS:000297583100025
+% Efficient analysis and representation of geophysical processes etc (2009)
+%  42 https://scholar.google.com/scholar?cites=11091413451938394557
+%  31 https://badge.dimensions.ai/details/id/pub.1025583596
+%  28 https://plu.mx/plum/a/?doi=10.1117%2F12.825730
+%  18 https://www.webofscience.com/wos/woscc/summary/de78e240-24c7-43a6-8e54-07c5ad7c92de-e52787e3/date-descending/1
+% A spatiospectral localization approach to estimating potential fields etc (2007)
+%  18 https://scholar.google.com/scholar?cites=16403920468846552887
+%  16 https://badge.dimensions.ai/details/id/pub.1000804387
+%  14 https://plu.mx/plum/a/?doi=10.1117%2F12.732406
+%  11 https://www.webofscience.com/wos/woscc/full-record/WOS:000252227400036
+% IEEE citations
+% Analysis of real vector fields on the sphere using Slepian functions (2012)
+%  10 https://scholar.google.com/scholar?cites=7688734836078055324
+%   8 https://www.webofscience.com/wos/woscc/full-record/WOS:000309943200001
+%   6 https://badge.dimensions.ai/details/id/pub.1094385637
+%   4 https://plu.mx/plum/a/?doi=10.1109%2FSSP.2012.6319659
+%
 % YEARBOOK PAPERS ARE LISTED UNDER JANUARY OF THE YEAR IN WHICH THEY APPEAR,
 % BUT IN THE ORDER FOUND ON THE WEBPAGE
 
-% What is the RANK of my cite in a paper that ranks them?  What is the
-% frequency of my cites in a paper?  What is the number of papers cited in a
-% paper that cites me?
+% What is the absolute RANK of a cite in a paper that ranks them?
+% What is the relative RANK of a cite in a paper, out of the total cited?
+% How many times does a paper get cited when the cites are limited?
+% What is the frequency of citation within in a paper?
 
-% EOS paper is being cited but not tracked in ISI, but tracked in
-% Dimensions! 18 https://app.dimensions.ai/details/publication/pub.1056348401
 % Should ask ISI to merge these
 %  0  Compressive Sensing on the Sphere: Slepian Functions for Applications in Geophysics - BOOK
 %  1 https://www.webofscience.com/wos/woscc/summary/5931ba47-8d77-4cff-88c5-8102cae5bb7c-e52638d1/date-descending/1
 %  1 https://www.webofscience.com/wos/woscc/summary/17559f36-f8de-47a0-84f2-b6baf3def3f2-e5267871/date-descending/1
 %  2 https://www.webofscience.com/wos/woscc/summary/36a6c8e9-c406-4c27-be73-8c3ed6220f2e-e525e996/date-descending/1
-% 13 https://www.webofscience.com/wos/woscc/summary/8b1d36da-5b28-4d88-82d0-06f6538aa3ee-e52607bb/date-descending/1
+% 14 https://www.webofscience.com/wos/woscc/summary/8b1d36da-5b28-4d88-82d0-06f6538aa3ee-e52607bb/date-descending/1
 
 % Direct software mentions with(out) citation:
+%
 % 10.1016/j.jhydrol.2024.131792
 % 10.1002/9781119528609.ch1
 % s41550-024-02304-w
@@ -63,8 +85,9 @@ function varargout=citations
 % 10.3390/rs11020144
 % 10.5194/se-9-457-2018
 % 10.1016/j.jhydrol.2022.128934
+%
 % Various Ph. D. theses...
-% More from Aslam...
+% More from Adeem Aslam...
 
 % Here you put in the publication date of your papers, nearest month
 PubDate.IJCG1997=[10 1997];
