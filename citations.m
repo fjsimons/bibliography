@@ -7,7 +7,7 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 03/28/2025
+% Last modified by fjsimons-at-alum.mit.edu, 03/29/2025
 
 % EOS citations
 % A suite of software analyzes data on the sphere (2015)
