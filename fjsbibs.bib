@@ -1,6 +1,4 @@
-% This file was created with JabRef 2.11.1.
 % Encoding: UTF-8
-
 
 @String { ACHA     = {Appl. Comput. Harmon. Anal.} }
 @String { AJES     = {Aust. J. Earth Sci.} }
@@ -70,8 +68,8 @@
 @String { PRC      = {Phys. Rev.\ C} }
 @String { PRD      = {Phys. Rev.\ D} }
 @String { PRE      = {Phys. Rev.\ E} }
-@string { PT       = {Phys.~Today}}
 @String { PRSL-A   = {Proc. R. Soc. London, Ser. A} }
+@string { PT       = {Phys.~Today}}
 @String { PTRSL-A  = {Phil. Trans. R. Soc. London, Ser. A} }
 @String { PUP      = {Princeton Univ. Press} }
 @String { QJRAS    = {Quart. J. R. Astron. Soc.} }
@@ -534,30 +532,54 @@
   Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/GJI-2022c.pdf}
 }
 
-@InProceedings{Liu+2022b,
-  Title                    = {3-{D} acoustic-elastic full-waveform inversion and migration of marine {VSP} data from {N}orway},
-  Author                   = {Zhaolun Liu and J\"urgen Hoffmann and \textbf{Frederik J. Simons} and Jeroen Tromp},
-  Booktitle                = SEG,
-  Year                     = {2022},
-  Address                  = {Denver, Col.},
-  Organization             = {Soc.~Explor.~Geophys.},
-  Pages                    = {XX},
-  Abstract                 = {We demonstrate an application of three-dimensional (3-D) elastic-acoustic coupled Full-Waveform Inversion (FWI) to deviated Rig-source Vertical Seismic Profile (R-VSP) data from the Fenja Field in Norway, to advance our understanding of subsurface structure. We perform 3-D Reverse-Time Migration (RTM) of the data using the inverted wave speed models. The RTM results show that the structures in our 3-D compressional speed (VP) image are a better match with those obtained from surface seismic imaging, compared to the legacy 2-D ray-based migration image. The resolution of our shear wave speed (VS ) image is higher than that of the VP image due to the smaller reflection angle of P-to-S converted waves compared to that of P-to-P reflections. Our VS and density (ρ) images yield additional structural information.},
-  File                     = {:/Users/fjsimons/MyPapers/CollectedWorks/SEG-2022.pdf:PDF},
-  Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/SEG-2022.pdf}
+@Article{Liu+2024,
+  author   = {Zhaolun Liu and J\"urgen Hoffmann and Etienne Bachmann and Congyue Cui and \textbf{Frederik J. Simons} and Jeroen Tromp},
+  journal  = GP,
+  title    = {Laplace-domain crosstalk-free source-encoded elastic Full Waveform Inversion using time-domain solvers},
+  year     = {2024},
+  number   = {4},
+  pages    = {1--21},
+  volume   = {89},
+  abstract = {Crosstalk-free source-encoded elastic Full-Waveform Inversion (FWI) using time-domain solvers has demonstrated skill and efficiency at conducting seismic inversions involving multiple sources and receivers with limited computational resources. A drawback of common formulations of the procedure is that, by sweeping through the frequency domain randomly at a rate of one or a few sparsely sampled frequencies per shot, it is difficult to simultaneously incorporate time-selective data windows, as necessary for the targeting of arrivals or wave packets during the various stages of the inversion. Here, we solve this problem by using the Laplace transform of the data. Using complex-valued frequencies allows for damping the records with flexible decay rates and temporal offsets that target specific traveltimes. We present the theory of crosstalk-free source-encoded FWI in the Laplace domain, develop the details of its implementation, and illustrate the procedure with numerical examples relevant to exploration-scale scenarios.},
+  doi      = {10.1190/geo2023-0351.1},
+  file     = {:/Users/fjsimons/MyPapers/CollectedWorks/GEOPHYSICS-2024.pdf:PDF},
+  url      = {https://geoweb.princeton.edu/people/simons/PDF/reprints/GEOPHYSICS-2024.pdf},
 }
 
-@Article{Liu+2024,
-  Title                    = {Laplace-domain crosstalk-free source-encoded elastic Full Waveform Inversion using time-domain solvers},
-  Author                   = {Zhaolun Liu and J\"urgen Hoffmann and Etienne Bachmann and Congyue Cui and \textbf{Frederik J. Simons} and Jeroen Tromp},
-  Journal                  = GP,
-  Year                     = {2024},
-  Number                   = {4},
-  Pages                    = {1--21},
-  Volume                   = {89},
-  Abstract                 = {Crosstalk-free source-encoded elastic Full-Waveform Inversion (FWI) using time-domain solvers has demonstrated skill and efficiency at conducting seismic inversions involving multiple sources and receivers with limited computational resources. A drawback of common formulations of the procedure is that, by sweeping through the frequency domain randomly at a rate of one or a few sparsely sampled frequencies per shot, it is difficult to simultaneously incorporate time-selective data windows, as necessary for the targeting of arrivals or wave packets during the various stages of the inversion. Here, we solve this problem by using the Laplace transform of the data. Using complex-valued frequencies allows for damping the records with flexible decay rates and temporal offsets that target specific traveltimes. We present the theory of crosstalk-free source-encoded FWI in the Laplace domain, develop the details of its implementation, and illustrate the procedure with numerical examples relevant to exploration-scale scenarios.},
-  Doi                      = {10.1190/geo2023-0351.1},
-  Url                      = {https://geoweb.princeton.edu/people/simons/PDF/reprints/GEOPHYSICS-2024.pdf}
+@Article{Wamba+2025,
+  author   = {Mathurin Dongmo Wamba and \textbf{Frederik J. Simons} and Jessica C. E. Irving},
+  journal  = GJI,
+  title    = {Data-space cross-validation of global tomographic models to assess mantle structure underneath the {P}acific {O}cean},
+  year     = {2025},
+  pages    = {241--259},
+  volume   = {241},
+  abstract = {Seismic tomography is a principal method for studying mantle structure, but imaging of Earth’s
+wave speed anomalies is conditioned by seismic wave sampling. Global models use misfit
+criteria that may strive for balance between portions of the data set but can leave important
+regional domains underserved. We evaluate two full-waveform global tomography wave speed
+models, GLAD-M25 (Global adjoint tomography model) and SEMUCB-WM1 (whole-mantle
+tomography model derived from fully numerical spectral element method forward modelling),
+in the mantle below the Pacific Ocean. The region of the South Pacific Superswell contains
+multiple hotspots which may be fed by plumes anchored in the Large Low Shear-Velocity
+Province at the base of the mantle. The uneven distribution of seismic receivers worldwide
+leaves several candidate plumes beneath various hotspots poorly resolved. We assess the
+regional quality of GLAD-M25 relative to its global performance using a partition of the
+seismic waveform data used in its construction. We evaluate synthetic waveforms computed
+using the spectral-element method to determine how well they fit the data according to a variety
+of criteria measured across multiple seismic phases and frequency bands. The distributions
+of traveltime anomalies that remain in GLAD-M25 are wider for trans-Pacific paths than
+globally, suggesting comparatively insufficiently resolved seismic velocity structure in the
+region of interest. Hence, Pacific-centred regional inversions, based on (augmented) subsets
+of the global data set have the potential to enhance the resolution of velocity structure. We
+compare GLAD-M25 and SEMUCB-WM1 by cross-validation with a new, independent, data
+set. Our results reveal that short- and long-wavelength structure is captured differently by the
+two models. Our findings lead us to recommend focusing future model iteration on and around
+the Pacific Superswell and adding data that sample new corridors, especially using ocean
+sensors, to better constrain seismic velocity structure in this area of significant geodynamic
+complexity.},
+  doi      = {10.1093/gji/ggaf044},
+  file     = {:/Users/fjsimons/MyPapers/CollectedWorks/GEOPHYSICS-2025.pdf:PDF},
+  url      = {https://geoweb.princeton.edu/people/simons/PDF/reprints/GJI-2025.pdf},
 }
 
 @Article{Maloof+2010,
@@ -1436,5 +1458,18 @@
   Url                      = {http://geoweb.princeton.edu/people/simons/PDF/reprints/NatCom-2023.pdf}
 }
 
-@comment{jabref-meta: databaseType:bibtex;}
+@InProceedings{Liu+2022b,
+  author       = {Zhaolun Liu and J\"urgen Hoffmann and \textbf{Frederik J. Simons} and Jeroen Tromp},
+  booktitle    = SEG,
+  title        = {3-{D} acoustic-elastic full-waveform inversion and migration of marine {VSP} data from {N}orway},
+  year         = {2022},
+  address      = {Denver, Col.},
+  organization = {Soc.~Explor.~Geophys.},
+  pages        = {799--801},
+  abstract     = {We demonstrate an application of three-dimensional (3-D) elastic-acoustic coupled Full-Waveform Inversion (FWI) to deviated Rig-source Vertical Seismic Profile (R-VSP) data from the Fenja Field in Norway, to advance our understanding of subsurface structure. We perform 3-D Reverse-Time Migration (RTM) of the data using the inverted wave speed models. The RTM results show that the structures in our 3-D compressional speed (VP) image are a better match with those obtained from surface seismic imaging, compared to the legacy 2-D ray-based migration image. The resolution of our shear wave speed (VS ) image is higher than that of the VP image due to the smaller reflection angle of P-to-S converted waves compared to that of P-to-P reflections. Our VS and density (ρ) images yield additional structural information.},
+  doi          = {10.1190/image2022-3750936.1},
+  file         = {:/Users/fjsimons/MyPapers/CollectedWorks/SEG-2022.pdf:PDF},
+  url          = {http://geoweb.princeton.edu/people/simons/PDF/reprints/SEG-2022.pdf},
+}
 
+@Comment{jabref-meta: databaseType:bibtex;}
