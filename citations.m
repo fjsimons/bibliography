@@ -7,22 +7,26 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 03/23/2026
-
+% Last modified by fjsimons-at-alum.mit.edu, 04/17/2026
+%
 % Slepian Functions and Their Use in Signal Estimation and Spectral Analysis (2010)
 %  45 https://www.webofscience.com/wos/woscc/summary/0ba20a86-c33c-4ff9-a3f7-0ab1c683689a-01975694f2/date-descending/1
 % EOS citations
 % A suite of software analyzes data on the sphere (2015)
-%  30 https://scholar.google.com/scholar?cites=17810315684376786911
-%  21 https://app.dimensions.ai/details/publication/pub.1056348401
+%  30 https://scholar.google.com/scholar?cites=1453597832946790635
+%  26 https://badge.dimensions.ai/details/id/pub.1056348401
 %  19 https://plu.mx/plum/a/?doi=10.1029%2F2015EO025851
+% A future for drifting seismic networks (2006)
+%  29 https://scholar.google.com/scholar?cites=8467554183241707088
+%  19 https://badge.dimensions.ai/details/id/pub.1048907913
+%  20 https://plu.mx/plum/a/?doi=10.1029%2F2006EO310002
 % SPIE citations
-% A spatiospectral localization approach for analyzing etc (2013)
+% A spatiospectral localization approach for analyzing and representing vector-valued functions on spherical surfaces (2013)
 %   5 https://scholar.google.com/scholar?cites=9894613516791553460
 %   5 https://badge.dimensions.ai/details/id/pub.1023253533
 %   2 https://plu.mx/plum/a/?doi=10.1117/12.2024703
 %   0 https://www.webofscience.com/wos/woscc/full-record/WOS:000326764600017
-% Wavelets and wavelet -like transforms on the sphere etc (2011)
+% Wavelets and wavelet-like transforms on the sphere etc (2011)
 %  34 https://scholar.google.com/scholar?cites=4631479886696000108
 %  19 https://badge.dimensions.ai/details/id/pub.1027737997
 %  16 https://plu.mx/plum/a/?doi=10.1117%2F12.892285
@@ -43,6 +47,7 @@ function varargout=citations
 %   8 https://www.webofscience.com/wos/woscc/full-record/WOS:000309943200001
 %   6 https://badge.dimensions.ai/details/id/pub.1094385637
 %   4 https://plu.mx/plum/a/?doi=10.1109%2FSSP.2012.6319659
+% JOSS citations
 %
 % YEARBOOK PAPERS ARE LISTED UNDER JANUARY OF THE YEAR IN WHICH THEY APPEAR,
 % BUT IN THE ORDER FOUND ON THE WEBPAGE
@@ -131,7 +136,7 @@ PubDate.GPHYS2014=[6 2014];
 PubDate.GPHYS2015=[9 2015];
 PubDate.EPSL2015a=[4 2015]; % Chris 2
 PubDate.EPSL2015b=[6 2015]; % Lara 1
-PubDate.NCOM2015=[8 2015]; % Seismic monitoring 
+PubDate.NCOM2015=[8 2015]; % Sukhovich
 PubDate.GRL2016=[8 2015]; % Chris 3
 PubDate.JGR2015=[9 2015]; % Alain Mars
 PubDate.GJI2016=[6 2016]; % Yanhua 3
@@ -139,7 +144,7 @@ PubDate.GJI2017=[6 2017]; % Alain Mars
 PubDate.IP2017=[11 2017]; % Volker Michel
 %PubDate.JGS2018=[11 2018]; % Beveridge
 PubDate.PNAS2019=[1 2019]; % Bevis
-PubDate.SREP2019=[2 2019]; % Galapagos
+PubDate.SREP2019=[2 2019]; % Nolet 1
 PubDate.APJL2019=[4 2019]; % Galanti
 PubDate.GJI2020=[2 2020]; % Yanhua3 exponentiated
 PubDate.BSSA2020=[6 2020]; % Joel1
@@ -149,6 +154,7 @@ PubDate.JGR2021=[3 2021]; % Alex Bermuda
 PubDate.GJI2021a=[3 2021]; % Lucia
 % PubDate.SRL2021a=[11 2021]; % Miscellany
 % PubDate.SRL2021b=[11 2021]; % Transfer
+% PubDate.AT2021=[01 2021]; % Twenty-thousand leagues
 % PubDate.GJI2022a=[7 2021]; % Joel
 PubDate.GJI2022b=[8 2021]; % Pete
 % PubDate.GJI2022c=[5 2022]; % Qiancheng
@@ -158,6 +164,9 @@ PubDate.GJI2022b=[8 2021]; % Pete
 % PubDate.PEPI2023=[7 2023] % Alex
 % PubDate.GPHYS2024=[7 2023] % Liu Crosstalk
 % PubDate.GJI2024=[7 2024] % Pipatprathanporn Waveform
+% PubDate.JGR2026a=[1 2026] % Simon
+% PubDate.JGR2026b=[3 2026] % Aster
+% PubDate.GJI2026=[5 2026] % Simons
 
 % Here you put in when they have gotten cited, nearest month
 Citations.IJCG1997=[ 9 1999 ; 12 1999 ; 11 2000 ;  3 2001 ; 11 2001 ;  5 2002 ; ...
@@ -324,7 +333,7 @@ Citations.GJI2005=[ 11 2005 ;  9 2006 ;  9 2006 ;  9 2006 ; 12 2006 ; 12 2007 ; 
                     10 2023 ;  6 2023 ;  8 2023 ; 11 2023 ; 12 2023 ; 11 2023 ; ...
                      1 2024 ;  3 2024 ; 10 2023 ;  5 2024 ;  5 2024 ; 10 2024 ; ...
                     12 2024 ; 10 2024 ;  3 2025 ;  5 2025 ;  8 2025 ;  9 2025 ; ...
-                    12 2024 ;  8 2025 ; 10 2025 ;  1 2026];
+                    12 2024 ;  8 2025 ; 10 2025 ;  1 2026 ;  2 2026];
 % GOES Seismic constraints on temperature of the Australian uppermost mantle, 
 Citations.EPSL2005=[  4 2006 ;  6 2006 ;  8 2006 ;  1 2007 ;  5 2007 ;  7 2007 ; ...
 		      8 2008 ;  4 2009 ;  6 2009 ;  2 2010 ;  3 2010 ;  7 2010 ; ...
@@ -385,7 +394,8 @@ Citations.SIAM2006=[ 9 2005 ;  9 2006 ;  1 2006 ;  9 2006 ; 12 2006 ;  2 2007 ; 
                     10 2023 ;  1 2024 ;  1 2024 ; 12 2023 ;  3 2024 ;  5 2024 ; ...
                      5 2023 ;  8 2024 ;  7 2024 ; 10 2024;  10 2024 ; 12 2024 ; ...
                     12 2024 ; 12 2024 ; 12 2024 ;  1 2025 ;  4 2025 ;  7 2025 ; ...
-                     9 2025 ; 10 2025 ; 12 2025 ; 10 2025 ; 10 2025 ; 12 2025];
+                     9 2025 ; 10 2025 ; 12 2025 ; 10 2025 ; 10 2025 ; 12 2025 ; ...
+                     4 2026 ;  2 2026];
 % SIMONS Spherical Slepian functions and the polar gap in geodesy
 Citations.GJI2006=[ 8 2007 ; 10 2007 ; 11 2007 ; 12 2007 ;  1 2008 ;  8 2008 ; ...
 		    9 2008 ;  9 2008 ; 11 2008 ; 11 2008 ;  6 2009 ; 11 2009 ; ...
@@ -463,7 +473,7 @@ Citations.JGR2009=[ 2 2010 ;  3 2011 ;  9 2011 ; 11 2011 ;  3 2012 ;  2 2013 ;  
 		    5 2018 ; 10 2018 ;  2 2019 ;  3 2020 ;  6 2020 ;  2 2021 ;  2 2021 ; ...
 		    2 2021 ;  4 2021 ;  1 2022 ;  9 2021 ; 11 2021 ;  1 2022 ;  9 2022 ; ...
                     8 2022 ; 10 2022 ;  9 2023 ;  7 2024 ;  8 2024 ;  5 2025 ;  5 2025 ; ...
-                    6 2025 ;  6 2025 ;  8 2025 ;  1 2026 ;  2 2026];
+                    6 2025 ;  6 2025 ;  8 2025 ;  1 2026 ;  2 2026 ;  6 2025 ;  5 2026];
 % R KOPP Probabilistic assessment of sea level during the last interglacial stage
 Citations.Nature2009=[12 2009 ;  7 2010 ;  7 2010 ;  7 2010 ;  8 2010 ;  9 2010 ; ...
                        9 2010 ;  9 2010 ; 10 2010 ;  1 2011 ;  2 2011 ;  2 2011 ; ...
@@ -596,7 +606,7 @@ Citations.GEM2011=[ 8 2011 ;  8 2011 ;  4 2012 ;  8 2012 ;  8 2012 ;  6 2013 ; .
 		   12 2018 ;  6 2018 ; 12 2018 ; 12 2019 ;  4 2020 ; 12 2020 ; ...
 		   12 2020 ;  7 2020 ;  7 2020 ;  9 2020 ; 12 2021 ;  8 2021 ; ...
 		    5 2021 ;  4 2022 ; 11 2022 ; 12 2022 ; 12 2022 ;  6 2023 ; ...
-                    8 2023 ;  6 2024 ;  6 2024 ;  9 2024 ;  1 2026];
+                    8 2023 ;  6 2024 ;  6 2024 ;  9 2024 ;  1 2026 ;  4 2026];
 % SUKHOVICH Automatic recognition of T and teleseismic P waves by statistical analysis of their spectra: An application to continuous records of moored hydrophones
 Citations.GRL2011=[ 8 2014 ;  8 2015 ;  1 2016 ;  4 2019 ; 12 2018 ;  6 2020 ; ...
 		    1 2022 ; 11 2021 ; 11 2021 ;  1 2022 ;  8 2022 ; 12 2022 ; ...
@@ -695,8 +705,9 @@ Citations.GJI2013b=[12 2013 ;  3 2013 ;  4 2014 ;  6 2014 ; 10 2014 ;  1 2015 ; 
                      6 2025 ;  6 2025 ;  6 2025 ;  6 2025 ;  7 2025 ;  1 2025 ; ...
                     12 2025 ;  1 2026 ;  3 2026];
 % Sofia Olhede GJI
-Citations.GJI2013c=[ 1 2014 ;  9 2014 ;  6 2015 ;  4 2016 ;  7 2018 ; 11 2019 ;...
-		     3 2020 ;  8 2021 ;  9 2021 ;  3 2022 ;  7 2022 ; 10 2023];
+Citations.GJI2013c=[ 1 2014 ;  9 2014 ;  6 2015 ;  4 2016 ;  7 2018 ; 11 2019 ; ...
+		     3 2020 ;  8 2021 ;  9 2021 ;  3 2022 ;  7 2022 ; 10 2023 ; ...
+                     2 2026 ;  5 2026];
 % CHARLETY Global seismic tomography with sparsity constraints: Comparison with smoothing and damping regularization,
 Citations.JGR2013=[10 2014 ;  6 2015 ;  8 2015 ;  1 2016 ;  1 2016 ;  6 2014 ; ...
 		    8 2016 ;  8 2016 ;  9 2016 ;  5 2015 ; 11 2015 ; 12 2015 ; ...
@@ -756,7 +767,7 @@ Citations.NCOM2015=[ 2 2016 ; 12 2016 ;  7 2018 ;  2 2019 ;  4 2019 ;  1 2020 ; 
 		     2 2019 ;  4 2021 ;  1 2022 ; 11 2021 ;  1 2022 ;  4 2022 ; ...
                      9 2022 ;  7 2022 ;  8 2022 ; 12 2021 ; 11 2022 ;  4 2023 ; ...
                      9 2023 ;  5 2023 ; 11 2023 ;  9 2023 ;  6 2024 ;  7 2024 ; ...
-                     9 2024 ; 10 2024 ;  5 2025 ;  5 2025 ;  1 2026];
+                     9 2024 ; 10 2024 ;  5 2025 ;  5 2025 ;  1 2026 ;  5 2026];
 % PLATTNER High-resolution local magnetic field models for the Martian South Pole from Mars Global Surveyor data 
 Citations.JGR2015=[ 9 2016 ;  3 2017 ;  3 2017 ;  8 2017 ;  8 2017 ;  4 2017 ; ...
 		    6 2017 ; 11 2017 ; 12 2017 ; 10 2017 ;  6 2018 ;  5 2018 ; ...
@@ -820,7 +831,7 @@ Citations.PNAS2019=[ 3 2019 ;  4 2019 ;  5 2019 ;  7 2019 ;  6 2019 ;  7 2019 ; 
                     12 2024 ; 12 2024 ; 11 2024 ;  3 2025 ;  5 2025 ;  5 2025 ; ...
                      7 2025 ;  6 2025 ;  9 2025 ; 10 2025 ;  9 2025 ; 10 2025 ; ...
                     12 2025 ; 12 2025 ;  1 2026 ;  4 2026 ;  2 2026 ;  3 2026 ; ....
-                     3 2026];
+                     3 2026 ;  1 2026];
 % NOLET Imaging the Galapagos mantle plume with an unconventional application of floating seismometers
 Citations.SREP2019=[ 6 2019 ;  7 2019 ;  1 2020 ;  1 2020 ;  1 2020 ;  3 2020 ; ...
 		     5 2020 ;  6 2020 ;  8 2020 ; 10 2020 ; 11 2020 ; 12 2020 ; ...
@@ -828,7 +839,7 @@ Citations.SREP2019=[ 6 2019 ;  7 2019 ;  1 2020 ;  1 2020 ;  1 2020 ;  3 2020 ; 
 		     9 2021 ;  1 2022 ; 11 2021 ;  1 2022 ;  9 2022 ;  9 2022 ; ...
                      8 2022 ; 11 2022 ; 12 2021 ;  9 2023 ; 11 2023 ;  6 2024 ; ...
                      7 2024 ;  8 2024 ;  3 2025 ;  6 2025 ;  6 2025 ; 10 2025 ; ...
-                     1 2026];
+                     1 2026 ;  6 2025 ;  4 2026 ;  5 2026];
 % GUALTIERI The origin of condary microseism Love waves
 Citations.PNAS2020=[  1 2021 ;  4 2021 ;  4 2021 ;  7 2021 ;  8 2021 ;  9 2021 ; ...
 		     12 2021 ;  1 2022 ;  2 2022 ;  6 2022 ;  6 2022 ;  7 2022 ; ...
@@ -854,21 +865,24 @@ Citations.JGR2021=[ 11 2021 ; 5 2023 ; 7 2023 ; 3 2024 ; 4 2025 ; 10 2025 ; 11 2
 Citations.GJI2021a=[ 8 2021 ;  9 2021 ; 1 2022 ; 9 2022 ; 10 2022 ; 2 2023 ; ...
                      1 2023 ; 3 2023 ; 7 2023 ; 7 2023 ;   1 2023 ; 9 2025 ; ...
                     11 2025 ];
+% SIMONS Twenty-thousand leagues under the sea---Recording earthquakes with autonomous floats
+% Citations.AT2021=[ 1 2022 ; 7 2023 ; 6 2024 ; 8 2024 ; 5 2025 ; 6 2025];
 % SIMON Recording earthquakes for tomographic imaging of the mantle beneath the South Pacific by autonomous MERMAID floats
 Citations.GJI2022a=[ 9 2022 ;  5 2023 ; 9 2023 ; 5 2024 ;  7 2024 ; 8 2024 ; 5 2025 ; ...
-                     6 2025 ;  1 2026];
+                     6 2025 ;  1 2026 ; 6 2025 ; 5 2026];
 % PIPATPRATHANPORN One year of sound recorded by a MERMAID float in the Pacific: hydroacoustic earthquake signals and infrasonic ambient noise
 Citations.GJI2022b=[ 1 2022 ; 6 2022 ; 5 2023 ;  9 2023 ;  5 2024 ;  6 2024 ; 8 2024 ; ...
-                    12 2024 ; 5 2025 ; 6 2025 ; 11 2025 ;  1 2026 ;  1 2026];
+                    12 2024 ; 5 2025 ; 6 2025 ; 11 2025 ;  1 2026 ;  1 2026 ; 6 2025 ; ...
+                     5 2026];
 Citations.GJI2022c=[5 2024]; % Qiancheng
 % SIMON A MERMAID Miscellany: Seismoacoustic signals beyond the P Wave
 % Citations.SRL2021a=[ 9 2022 ;  7 2023 ; 9 2023 ; 3 2024 ; 4 2024 ; 5 2024 ; 8 2024 ; 5 2025 ; ...
-%                      6 2025 ; 10 2025;  1 2026]; 
+%                      6 2025 ; 10 2025;  1 2026 ; 6 2025];
 % BURKY II Instrument response removal and the 2020 M-Lg 3.1 Marlboro, New Jersey, earthquake
 % Citations.SRL2021b=[1 2022 ; 7 2023 ; 7 2023 ; 1 2025 ; 9 2025 ;  1 2026]; 
 % GUILLAUMIN The Debiased Spatial Whittle likelihood
 % Citations.JRSSB2022=[4 2023 ; 8 2023 ; 9 2024 ; 10 2024 ; 6 2025 ; 9 2025 ; 12 2025 ; 2 2026 ; ...
-%                      3 2026];
+%                      3 2026 ; 8 2026 ; 5 2026];
 % ZHANG Seismic evidence for a 1000 km mantle discontinuity under the Pacific
 % Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2024 ; ...
 %                     8 2024 ; 11 2024 ; 2 2025 ; 6 2025 ; 11 2025 ; 10 2025 ; 2 2026 ; ...
@@ -882,6 +896,12 @@ Citations.GJI2022c=[5 2024]; % Qiancheng
 % Citations.GJI2024=[ 2 2025 ; 1 2026];
 % WAMBA Data-space cross-validation of mantle structure in global tomographic models underneath the Pacific Ocean
 % Citations.GJI2025=[8 2025];
+% SIMONS Maximum-likelihood estimation of the Matérn covariance structure of isotropic spatial random fields on finite, sampled grids
+% Citations.GJI2026=[];
+% SIMON Hydroacoustic Observations of the 15 January 2022 Hunga Tonga-Hunga Ha'apai Eruption: The Role of Bathymetry Along the Path
+% Citations.JGR2026a=[ 5 2026];
+% ASTER Global Primary and Secondary Microseism Multi-Decade Geographic Variation, Secular Intensification, and Period Lengthening
+% Citations.JGR2026b=[];
 
 % Here you define colors and symbols for the graph
 symbs={'o','v','s','^','*','d','x'};
