@@ -149,22 +149,22 @@ PubDate.APJL2019=[4 2019]; % Galanti
 PubDate.GJI2020=[2 2020]; % Yanhua3 exponentiated
 PubDate.BSSA2020=[6 2020]; % Joel1
 PubDate.PNAS2020=[11 2020]; % Love
-% PubDate.GEM2020=[11 2020]; % Reuber
+PubDate.GEM2020=[11 2020]; % Reuber
 PubDate.JGR2021=[3 2021]; % Alex Bermuda
 PubDate.GJI2021a=[3 2021]; % Lucia
-% PubDate.SRL2021a=[11 2021]; % Miscellany
-% PubDate.SRL2021b=[11 2021]; % Transfer
-% PubDate.AT2021=[01 2021]; % Twenty-thousand leagues
-% PubDate.GJI2022a=[7 2021]; % Joel
+PubDate.SRL2021a=[11 2021]; % Miscellany
+PubDate.SRL2021b=[11 2021]; % Transfer
+PubDate.AT2021=[01 2021]; % Twenty-thousand leagues
+PubDate.GJI2022a=[7 2021]; % Joel
 PubDate.GJI2022b=[8 2021]; % Pete
-% PubDate.GJI2022c=[5 2022]; % Qiancheng
-% PubDate.JRSSB2022=[7 2022] % Arthur Guillaumin
-% PubDate.NCOM2023=[3 2023] % Zhendong Zhang
+PubDate.GJI2022c=[5 2022]; % Qiancheng
+PubDate.JRSSB2022=[7 2022] % Arthur Guillaumin
+PubDate.NCOM2023=[3 2023] % Zhendong Zhang
 % PubDate.SRL2023=[5 2023] % Molly Staats
-% PubDate.PEPI2023=[7 2023] % Alex
-% PubDate.GPHYS2024=[7 2023] % Liu Crosstalk
-% PubDate.GJI2024=[7 2024] % Pipatprathanporn Waveform
-% PubDate.JGR2026a=[1 2026] % Simon
+PubDate.PEPI2023=[7 2023] % Alex
+PubDate.GPHYS2024=[7 2023] % Liu Crosstalk
+PubDate.GJI2024=[7 2024] % Pipatprathanporn Waveform
+PubDate.JGR2026a=[1 2026] % Simon
 % PubDate.JGR2026b=[3 2026] % Aster
 % PubDate.GJI2026=[5 2026] % Simons
 
@@ -865,17 +865,18 @@ Citations.GJI2020=[  4 2021 ;  7 2021 ;  9 2021 ;  1 2022 ;  1 2022 ;  2 2022 ; 
                      3 2023 ;  7 2023 ;  9 2023 ;  8 2024 ;  7 2024 ;  9 2024 ;  9 2024 ; ...
                      2 2025 ;  9 2025 ;  2 2026];
 % BEVERIDGE 
-% Citations.JGS2018=[  1 2021 ; 5 2021 ; 2 2022 ; 5 2022 ; 7 2023 ; 7 2024 ; 3 2025 ; ...
-%                      4 2025 ; 9 2025 ; 9 2025]; 
-% Citations.GEM2020=[ 8 2021 ; 12 2021 ; 6 2022 ; 3 2024 ; 12 2024]; % Georg Reuber
-% Burky I Mantle Transition Zone Receiver Functions for Bermuda: Automation, Quality Control, and Interpretation
+Citations.JGS2018=[  1 2021 ; 5 2021 ; 2 2022 ; 5 2022 ; 7 2023 ; 7 2024 ; 3 2025 ; ...
+                     4 2025 ; 9 2025 ; 9 2025];
+% REUBER
+Citations.GEM2020=[ 8 2021 ; 12 2021 ; 6 2022 ; 3 2024 ; 12 2024]; 
+% BURKY I Mantle transition zone receiver functions for Bermuda: Automation, quality control, and interpretation
 Citations.JGR2021=[ 11 2021 ; 5 2023 ; 7 2023 ; 3 2024 ; 4 2025 ; 10 2025 ; 11 2025 ; 4 2026]; 
 % GUALTIERI  Generation of secondary microseism Love waves: effects of bathymetry, 3-D structure and source seasonality, 
 Citations.GJI2021a=[ 8 2021 ;  9 2021 ; 1 2022 ; 9 2022 ; 10 2022 ; 2 2023 ; ...
                      1 2023 ;  3 2023 ; 7 2023 ; 7 2023 ;   1 2023 ; 9 2025 ; ...
                     11 2025 ;  6 2026];
 % SIMONS Twenty-thousand leagues under the sea---Recording earthquakes with autonomous floats
-% Citations.AT2021=[ 1 2022 ; 7 2023 ; 6 2024 ; 8 2024 ; 5 2025 ; 6 2025];
+Citations.AT2021=[ 1 2022 ; 7 2023 ; 6 2024 ; 8 2024 ; 5 2025 ; 6 2025];
 % SIMON Recording earthquakes for tomographic imaging of the mantle beneath the South Pacific by autonomous MERMAID floats
 Citations.GJI2022a=[ 9 2022 ;  5 2023 ; 9 2023 ; 5 2024 ;  7 2024 ; 8 2024 ; 5 2025 ; ...
                      6 2025 ;  1 2026 ; 5 2026];
@@ -884,32 +885,37 @@ Citations.GJI2022b=[ 1 2022 ; 6 2022 ; 5 2023 ;  9 2023 ;  5 2024 ;  6 2024 ; 8 
                     12 2024 ; 5 2025 ; 6 2025 ; 11 2025 ;  1 2026 ;  1 2026 ; 5 2026];
 Citations.GJI2022c=[5 2024]; % Qiancheng
 % SIMON A MERMAID Miscellany: Seismoacoustic signals beyond the P Wave
-% Citations.SRL2021a=[ 9 2022 ;  7 2023 ; 9 2023 ; 3 2024 ; 4 2024 ; 5 2024 ; 8 2024 ; 5 2025 ; ...
-%                      6 2025 ; 10 2025;  1 2026];
+Citations.SRL2021a=[ 9 2022 ;  7 2023 ; 9 2023 ; 3 2024 ; 4 2024 ; 5 2024 ; 8 2024 ; 5 2025 ; ...
+                      6 2025 ; 10 2025;  1 2026];
 % BURKY II Instrument response removal and the 2020 M-Lg 3.1 Marlboro, New Jersey, earthquake
-% Citations.SRL2021b=[1 2022 ; 7 2023 ; 7 2023 ; 1 2025 ; 9 2025 ;  1 2026]; 
+ Citations.SRL2021b=[1 2022 ; 7 2023 ; 7 2023 ; 1 2025 ; 9 2025 ;  1 2026]; 
 % GUILLAUMIN The Debiased Spatial Whittle likelihood
-% Citations.JRSSB2022=[4 2023 ; 8 2023 ; 9 2024 ; 10 2024 ; 6 2025 ; 9 2025 ; 12 2025 ; 2 2026 ; ...
-%                      3 2026 ; 8 2026 ; 5 2026 ;  4 2026];
+ Citations.JRSSB2022=[4 2023 ; 8 2023 ; 9 2024 ; 10 2024 ; 6 2025 ; 9 2025 ; 12 2025 ; 2 2026 ; ...
+                      3 2026 ; 8 2026 ; 5 2026 ;  4 2026];
 % ZHANG Seismic evidence for a 1000 km mantle discontinuity under the Pacific
-% Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2024 ; ...
-%                     8 2024 ; 11 2024 ; 2 2025 ; 6 2025 ; 11 2025 ; 10 2025 ; 2 2026 ; ...
-%                     1 2026 ;  1 2026 ; 2 2026 ; 2 2026 ;  9 2026];
-% Citations.SRL2023=[]; % Molly Staats
-% Burky III The mantle transition zone beneath eastern North America: Receiver functions and tomographic velocity models
-% Citations.PEPI2023=[ 2 2025 ;  4 2025 ; 6 2025 ; 7 2025 ; 11 2025 ;  1 2026 ; 5 2026 ; 3 2026 ; 4 2026];
+Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2024 ; ...
+                     8 2024 ; 11 2024 ; 2 2025 ; 6 2025 ; 11 2025 ; 10 2025 ; 2 2026 ; ...
+                     1 2026 ;  1 2026 ; 2 2026 ; 2 2026 ;  9 2026];
+% STAATS
+% Citations.SRL2023=[];
+% BURKY III The mantle transition zone beneath eastern North America: Receiver functions and tomographic velocity models
+Citations.PEPI2023=[ 2 2025 ;  4 2025 ; 6 2025 ; 7 2025 ; 11 2025 ;  1 2026 ; 5 2026 ; 3 2026 ; 4 2026];
 % LIU ZHAOLUN Laplace-domain crosstalk-free source-encoded elastic full-waveform inversion using time-domain solvers
-% Citations.GPHYS2024=[6 2024 ; 8 2024 ; 7 2025];
+Citations.GPHYS2024=[6 2024 ; 8 2024 ; 7 2025];
 % PIPATRATHANPORN Waveform modelling of hydroacoustic teleseismic earthquake records from autonomous MERMAID floats
-% Citations.GJI2024=[ 2 2025 ; 1 2026];
+Citations.GJI2024=[ 2 2025 ; 1 2026];
 % WAMBA Data-space cross-validation of mantle structure in global tomographic models underneath the Pacific Ocean
-% Citations.GJI2025=[8 2025];
+Citations.GJI2025=[8 2025];
 % SIMONS Maximum-likelihood estimation of the Matérn covariance structure of isotropic spatial random fields on finite, sampled grids
 % Citations.GJI2026=[];
 % SIMON Hydroacoustic Observations of the 15 January 2022 Hunga Tonga-Hunga Ha'apai Eruption: The Role of Bathymetry Along the Path
-% Citations.JGR2026a=[ 5 2026];
+Citations.JGR2026a=[ 5 2026];
 % ASTER Global Primary and Secondary Microseism Multi-Decade Geographic Variation, Secular Intensification, and Period Lengthening
 % Citations.JGR2026b=[];
+
+% WALBERT
+
+% KILDAL-BRANDT
 
 % Here you define colors and symbols for the graph
 symbs={'o','v','s','^','*','d','x'};
