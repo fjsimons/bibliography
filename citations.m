@@ -927,7 +927,6 @@ cols=cols(randi(length(cols),1,length(fieldnames(Citations))));
 names=fieldnames(PubDate);
 
 % Calculate
-clf
 tots=0;
 for index=1:length(names)
   % DATES of citations 
@@ -951,20 +950,6 @@ end
 [cpps,cppi]=sort(cpp,'descend');
 H=sum(cpps>=[1:length(cpp)]);
 
-% Plot in function of times cited so legend is in order
-for index=cppi
-  Cit=Citations.(names{index});
-  Pub=PubDate.(names{index});
-  Msince=calcs(Cit,Pub);
-  pc(index)=plot(sort(Msince),[1:length(Msince)],'-',...
-		 'Marker',symbs{index},...
-		 'MarkerFaceColor',cols{index},'MarkerEdgeColor','k',...%cols{index},...
-		 'MarkerSize',4,'LineW',1);
-  hold on
-end
-
-legend(names{cppi},'Location','NorthWest','AutoUpdate','off');
-
 % Displays on-screen output
 [cppsr,cppir]=sort(cpr,'descend');
 disp(' ')
@@ -981,46 +966,64 @@ disp(' ')
 disp(sprintf('Total : %3.3i',sum(cpp)))
 disp(' ')
 
+% Plot in function of times cited so legend is in order
+clf
+ah=axes;
+for index=cppi
+  Cit=Citations.(names{index});
+  Pub=PubDate.(names{index});
+  Msince=calcs(Cit,Pub);
+  pc(index)=plot(sort(Msince),[1:length(Msince)],'-',...
+		 'Marker',symbs{index},...
+		 'MarkerFaceColor',cols{index},'MarkerEdgeColor','k',...%cols{index},...
+		 'MarkerSize',4,'LineW',1);
+  hold on
+end
+
+% Split and make two legends
+halfs=round(length(cppi)/2);
+leg(1)=legend(ah,pc(1:halfs),names{cppi(1:halfs)},'Location','NorthWest','AutoUpdate','off');
+
 xl=xlabel('Months after publication');
 yl=ylabel('Cumulative number of citations verified by hand from ISI Web of Science');
 tl=title(sprintf(...
     'F. J. Simons Citations in the peer-reviewed literature. Total %i. H-index %i.',...
     tots,H));
-
 set([xl yl],'FontSize',12)
 set([tl],'FontSize',13)
 xlo=xlim;
 set(gca,'Xtick',-12:24:xlo(2))
 
 % Add half, once, twice-a-month reference lines, etc
-yl=ylim;
-xl=xlim;
+yel=ylim;
+xel=xlim;
 ondex=0;
 for index=[0.5 1:5]
   ondex=ondex+1;
-  pom(ondex)=plot([0 xl(2)],[0 xl(2)/index],'Color',grey);
+  pom(ondex)=plot([0 xel(2)],[0 xel(2)/index],'Color',grey);
 end
-xlim(xl)
-pom(ondex+1)=plot(xl,[H H],'Color','r');
-%ylim([0 xl(2)]) 
-ylim([0 450])
-
+xlim(xel)
+pom(ondex+1)=plot(xel,[H H],'Color','r');
 for index=1:6
   bottom(pom(index),gca);
 end
 hold off
 
-longticks(gca,2)
-grid
-fig2print(gcf,'tall')
-
-if ~verLessThan('matlab','8.4.0')
-  movev(tl,xl(2)/30)
-end
-
-%disp('ad hoc May 31 2022')
+ylim([0 450])
 xlim([-100 300])
 
+movev(tl,yel(2)/30)
+
+longticks(ah,2)
+grid on
+
+% Add the second legend
+ax=xtraxis(ah);
+axes(ax)
+leg(2)=legend(ax,pc(halfs+1:end),names{cppi(halfs+1:end)},'Location','NorthEast','AutoUpdate','off');
+moveh(leg(2),-0.41)
+
+fig2print(gcf,'tall')
 figdisp([],[],[],1)
 
 % Optional output... for Zipf plots etc
