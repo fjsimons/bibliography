@@ -7,7 +7,7 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 08/20/2026
+% Last modified by fjsimons-at-alum.mit.edu, 09/05/2026
 %
 % Slepian Functions and Their Use in Signal Estimation and Spectral Analysis (2010)
 %  45 https://www.webofscience.com/wos/woscc/summary/0ba20a86-c33c-4ff9-a3f7-0ab1c683689a-01975694f2/date-descending/1
@@ -158,15 +158,16 @@ PubDate.AT2021=[01 2021]; % Twenty-thousand leagues
 PubDate.GJI2022a=[7 2021]; % Joel
 PubDate.GJI2022b=[8 2021]; % Pete
 PubDate.GJI2022c=[5 2022];
-PubDate.JRSSB2022=[7 2022] % Arthur Guillaumin
-PubDate.NCOM2023=[3 2023] % Zhendong Zhang
-% PubDate.SRL2023=[5 2023] % Molly Staats
-PubDate.PEPI2023=[7 2023] % Alex
-PubDate.GPHYS2024=[7 2023] % Liu Crosstalk
-PubDate.GJI2024=[7 2024] % Pipatprathanporn Waveform
-PubDate.JGR2026a=[1 2026] % Simon
-% PubDate.JGR2026b=[3 2026] % Aster
-% PubDate.GJI2026=[5 2026] % Simons
+PubDate.JRSSB2022=[7 2022];
+PubDate.NCOM2023=[3 2023]; % Zhendong Zhang
+% PubDate.SRL2023=[5 2023]; % Molly Staats
+PubDate.PEPI2023=[7 2023]; % Alex
+PubDate.GPHYS2024=[7 2023]; % Liu Crosstalk
+PubDate.GJI2024=[7 2024]; % Pipatprathanporn Waveform
+PubDate.JGR2026a=[1 2026]; % Simon
+% PubDate.JGR2026b=[3 2026]; % Aster
+% PubDate.GJI2026=[5 2026]; % Simons
+% PubDate.SRL2026=[X 2026]; % Becker
 
 % Here you put in when they have gotten cited, nearest month
 Citations.IJCG1997=[ 9 1999 ; 12 1999 ; 11 2000 ;  3 2001 ; 11 2001 ;  5 2002 ; ...
@@ -753,7 +754,7 @@ Citations.GPHYS2015=[ 9 2016 ; 12 2016 ; 11 2016 ;  3 2017 ;  5 2017 ;  2 2018 ;
                       8 2022 ; 10 2022 ; 10 2022 ; 10 2022 ;  2 2023 ;  2 2023 ; ...
                       2 2023 ;  3 2023 ;  3 2023 ;  6 2023 ;  8 2023 ;  1 2023 ; ...
                       2 2024 ;  3 2024 ;  4 2024 ; 12 2024 ;  8 2025 ; 11 2025 ; ...
-                      7 2026 ;  5 2026 ;  9 2026] ;
+                      7 2026 ;  5 2026 ;  9 2026 ;  8 2026];
 % HARIG Accelerated West Antarctic ice mass loss continues to outpace East Antarctic gains
 Citations.EPSL2015a=[10 2015 ; 10 2015 ; 12 2015 ; 12 2015 ;  3 2016 ;  2 2016 ; ...
                       5 2016 ;  4 2016 ;  3 2016 ;  6 2016 ;  4 2016 ;  5 2016 ; ...
@@ -778,7 +779,8 @@ Citations.NCOM2015=[ 2 2016 ; 12 2016 ;  7 2018 ;  2 2019 ;  4 2019 ;  1 2020 ; 
 		     2 2019 ;  4 2021 ;  1 2022 ; 11 2021 ;  1 2022 ;  4 2022 ; ...
                      9 2022 ;  7 2022 ;  8 2022 ; 12 2021 ; 11 2022 ;  4 2023 ; ...
                      9 2023 ;  5 2023 ; 11 2023 ;  9 2023 ;  6 2024 ;  7 2024 ; ...
-                     9 2024 ; 10 2024 ;  5 2025 ;  5 2025 ;  1 2026 ;  5 2026];
+                     9 2024 ; 10 2024 ;  5 2025 ;  5 2025 ;  1 2026 ;  5 2026 ; ...
+                    10 2026];
 % PLATTNER High-resolution local magnetic field models for the Martian South Pole from Mars Global Surveyor data 
 Citations.JGR2015=[ 9 2016 ;  3 2017 ;  3 2017 ;  8 2017 ;  8 2017 ;  4 2017 ; ...
 		    6 2017 ; 11 2017 ; 12 2017 ; 10 2017 ;  6 2018 ;  5 2018 ; ...
@@ -897,10 +899,10 @@ Citations.GJI2022c=[ 5 2024 ;  6 2026 ;  7 2026];
 Citations.SRL2021a=[ 9 2022 ;  7 2023 ; 9 2023 ; 3 2024 ; 4 2024 ; 5 2024 ; 8 2024 ; 5 2025 ; ...
                       6 2025 ; 10 2025;  1 2026];
 % BURKY II Instrument response removal and the 2020 M-Lg 3.1 Marlboro, New Jersey, earthquake
- Citations.SRL2021b=[1 2022 ; 7 2023 ; 7 2023 ; 1 2025 ; 9 2025 ;  1 2026 ;  9 2026]; 
+Citations.SRL2021b=[1 2022 ; 7 2023 ; 7 2023 ; 1 2025 ; 9 2025 ;  1 2026 ;  9 2026]; 
 % GUILLAUMIN The Debiased Spatial Whittle likelihood
- Citations.JRSSB2022=[4 2023 ; 8 2023 ; 9 2024 ; 10 2024 ; 6 2025 ; 9 2025 ; 12 2025 ; 2 2026 ; ...
-                      3 2026 ; 8 2026 ; 5 2026 ;  4 2026];
+Citations.JRSSB2022=[4 2023 ; 8 2023 ; 9 2024 ; 10 2024 ; 6 2025 ; 9 2025 ; 12 2025 ; 2 2026 ; ...
+                     3 2026 ; 8 2026 ; 5 2026 ;  4 2026 ; 9 2025];
 % ZHANG Seismic evidence for a 1000 km mantle discontinuity under the Pacific
 Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2024 ; ...
                      8 2024 ; 11 2024 ; 2 2025 ; 6 2025 ; 11 2025 ; 10 2025 ; 2 2026 ; ...
@@ -910,7 +912,7 @@ Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2
 % BURKY III The mantle transition zone beneath eastern North America: Receiver functions and tomographic velocity models
 Citations.PEPI2023=[ 2 2025 ;  4 2025 ; 6 2025 ; 7 2025 ; 11 2025 ;  1 2026 ; 5 2026 ; 3 2026 ; 4 2026];
 % LIU ZHAOLUN Laplace-domain crosstalk-free source-encoded elastic full-waveform inversion using time-domain solvers
-Citations.GPHYS2024=[6 2024 ; 8 2024 ; 7 2025];
+Citations.GPHYS2024=[6 2024 ; 8 2024 ; 7 2025 ; 9 2026];
 % PIPATRATHANPORN Waveform modelling of hydroacoustic teleseismic earthquake records from autonomous MERMAID floats
 Citations.GJI2024=[ 2 2025 ; 1 2026];
 % WAMBA Data-space cross-validation of mantle structure in global tomographic models underneath the Pacific Ocean
