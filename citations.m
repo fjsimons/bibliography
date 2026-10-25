@@ -7,7 +7,7 @@ function varargout=citations
 %
 % Tracks the number of citations since the date of publication of my papers.
 %
-% Last modified by fjsimons-at-alum.mit.edu, 09/28/2026
+% Last modified by fjsimons-at-alum.mit.edu, 10/02/2026
 %
 % Slepian Functions and Their Use in Signal Estimation and Spectral Analysis (2010)
 %  45 https://www.webofscience.com/wos/woscc/summary/0ba20a86-c33c-4ff9-a3f7-0ab1c683689a-01975694f2/date-descending/1
@@ -336,7 +336,7 @@ Citations.GJI2005=[ 11 2005 ;  9 2006 ;  9 2006 ;  9 2006 ; 12 2006 ; 12 2007 ; 
                      1 2024 ;  3 2024 ; 10 2023 ;  5 2024 ;  5 2024 ; 10 2024 ; ...
                     12 2024 ; 10 2024 ;  3 2025 ;  5 2025 ;  8 2025 ;  9 2025 ; ...
                     12 2024 ;  8 2025 ; 10 2025 ;  1 2026 ;  2 2026 ;  4 2026 ; ...
-                     5 2026 ;  6 2026 ;  7 2026];
+                     5 2026 ;  6 2026 ;  7 2026 ;  1 2027];
 % GOES Seismic constraints on temperature of the Australian uppermost mantle, 
 Citations.EPSL2005=[  4 2006 ;  6 2006 ;  8 2006 ;  1 2007 ;  5 2007 ;  7 2007 ; ...
 		      8 2008 ;  4 2009 ;  6 2009 ;  2 2010 ;  3 2010 ;  7 2010 ; ...
@@ -870,7 +870,7 @@ Citations.PNAS2020=[  1 2021 ;  4 2021 ;  4 2021 ;  7 2021 ;  8 2021 ;  9 2021 ;
                       3 2026 ;  6 2026];
 % BSSA Joel Multiscale estimation of event arrival times and their uncertainties in hydroacoustic records from autonomous oceanic floats
 Citations.BSSA2020=[  2 2021 ;  2 2021 ;  1 2022 ;  11 2021 ;  5 2022 ; 1 2022 ; ...
-                      9 2023 ;  7 2024 ;  8 2024 ;   1 2026];
+                      9 2023 ;  7 2024 ;  8 2024 ;   1 2026 ;  9 2026];
 % YUAN IV The exponentiated phase measurement, and objective-function hybridization for adjoint waveform tomography
 Citations.GJI2020=[  4 2021 ;  7 2021 ;  9 2021 ;  1 2022 ;  1 2022 ;  2 2022 ;  3 2022 ; ...
 		     5 2022 ;  7 2022 ;  7 2022 ;  8 2022 ; 11 2022 ; 12 2022 ;  2 2023 ; ...
@@ -910,7 +910,7 @@ Citations.NCOM2023=[7 2023 ;  2 2024 ; 4 2024 ; 5 2024 ;  6 2024 ;  6 2024 ; 8 2
                      8 2024 ; 11 2024 ; 2 2025 ; 6 2025 ; 11 2025 ; 10 2025 ; 2 2026 ; ...
                      1 2026 ;  1 2026 ; 2 2026 ; 2 2026 ;  9 2026];
 % STAATS
-% Citations.SRL2023=[];
+% Citations.SRL2023=[5 2024 ; 9 2026];
 % BURKY III The mantle transition zone beneath eastern North America: Receiver functions and tomographic velocity models
 Citations.PEPI2023=[ 2 2025 ;  4 2025 ; 6 2025 ; 7 2025 ; 11 2025 ;  1 2026 ; 5 2026 ; 3 2026 ; 4 2026];
 % LIU ZHAOLUN Laplace-domain crosstalk-free source-encoded elastic full-waveform inversion using time-domain solvers
